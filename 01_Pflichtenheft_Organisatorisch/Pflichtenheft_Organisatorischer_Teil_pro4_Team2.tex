@@ -1,28 +1,7 @@
-\documentclass[a4paper]{fhnwreport} %Legt grundlegende Formatierungen wie Schriftarten, Ort Seitenzahlen etc. fest.
-
-%-----------------------------Wichtigste/Zentrale Packages------------------------ 
-\usepackage[german]{babel}
-%\usepackage[latin9]{inputenc}
-\usepackage[babel, german=quotes]{csquotes}
-\usepackage{hyperref}
-\usepackage{verbatim}
-\usepackage{amsmath}		%Mathe-Package
-\usepackage{amsthm}			%Mathe-Package
-\usepackage{graphicx} 	%Paket für die Darstellung von Abbildungen
-\usepackage{fancyhdr}
-\usepackage[latin1]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{pdfpages}
-\usepackage{tikz}
-\usetikzlibrary{arrows}
-\usepackage{lmodern}
-\usepackage{listings}
-\usepackage{pdfpages}%Required to include pdf, also possible with 				\includegraphics
-\usepackage[toc,page]{appendix}%Required for appendix
-
+\documentclass[a4paper]{fhnwreport} %Legt grundlegende Formatierungen wie 
 \graphicspath{{./graphics/}}%Change according to graphics folder!
 
-\title{Fachbericht Easy-PID}
+\title{Pflichtenheft SolarMeasurementSystem}
 \date{Windisch, \today}
 
 \begin{document}
@@ -34,10 +13,10 @@
 \vfill
 \textsc{
 \begin{tabbing}
-Auftraggeber: \hspace{4em} \=   Peter Niklaus \\[2ex]
-Betreuer:  \>  Peter Niklaus (Elektrotechnik) \\ \> Richard Gut (Objektorientierte Programmierung) \\ \> Pascal Buchschacher (Projektmanagement) \\ \> Anita Gertiser (Kommunikation) \\[2ex]
+Auftraggeber: \hspace{4em} \=   Hans Gysin \\[2ex]
+Fachcoaches:  \>  Matthias Meier \\ \> Pascal Schleuniger \\ \> Hans Gysin \\ \> Anita Gertiser \\ \>Pascal Buchschacher \\ \>Bonnie Domenghino\\[2ex]
 Gruppe:  \>  FS15 pro2E Team 3 \\[2ex]
-Teammitglieder:  \> Yanick Frei (Projektleiter) \\ \> Simon Wyss (Experte Elektrotechnik) \\ \> Josua Stierli (Experte Programmierung) \\ \> Alexander Murray (Stv. Projektleiter) \\ \> Simon Sturm \\[2ex]
+Teammitglieder:  \> David Laim (Projektleiter) \\ \> Sarah Simmen (Stv. Projektleiterin) \\ \> Anita Rosenberger \\ \> Claudius J"org \\ \> Denis Stampfli \\ \>Simon Sturm \\ \>Yohannes Measho \\[2ex]
 Studiengang: \> Elektro- und Informationstechnik
 \end{tabbing}}
 \vfill
@@ -45,6 +24,12 @@ Studiengang: \> Elektro- und Informationstechnik
 \clearpage
 
 \include{Projektorganisation}
+\include{Projektplanung}
+\include{Projektbudget}
+\include{Kommunikation}
+\include{Risikomanagement}
+\include{Projektvereinbarung}
+
 \end{document}
 
 
