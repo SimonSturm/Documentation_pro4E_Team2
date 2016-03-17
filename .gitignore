@@ -15,4 +15,4 @@
 *.pdf
 !fhnwlogo.pdf
 !fhnwreport.pdf
-!./graphics/*
+!./*/graphics/*
