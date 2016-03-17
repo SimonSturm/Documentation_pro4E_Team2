@@ -1,6 +1,6 @@
 SyncTeX Version:1
-Input:1:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.tex
-Input:2:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\fhnwreport.cls
+Input:1:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.tex
+Input:2:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\fhnwreport.cls
 Input:3:C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 Input:4:C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo
 Input:5:C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty
@@ -20,18 +20,18 @@ Input:18:C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
 Input:19:C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
 Input:20:C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty
 Input:21:C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg
-Input:22:C:\Program Files\MiKTeX 2.9\tex\generic\babel\germanb.ldf
-Input:23:C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def
-Input:24:C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty
-Input:25:C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def
-Input:26:C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu
-Input:27:C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu
-Input:28:C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu
-Input:29:C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty
-Input:30:C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
-Input:31:C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty
-Input:32:C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.def
-Input:33:C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.cfg
+Input:22:C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\german.ldf
+Input:23:C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\germanb.ldf
+Input:24:C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def
+Input:25:C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty
+Input:26:C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def
+Input:27:C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu
+Input:28:C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu
+Input:29:C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu
+Input:30:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.sty
+Input:31:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+Input:32:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def
+Input:33:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.cfg
 Input:34:C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
 Input:35:C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
 Input:36:C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty
@@ -39,7 +39,7 @@ Input:37:C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
 Input:38:C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
 Input:39:C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
 Input:40:C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
-Input:41:C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+Input:41:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 Input:42:C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
 Input:43:C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
 Input:44:C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty
@@ -49,103 +49,104 @@ Input:47:C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
 Input:48:C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
 Input:49:C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
 Input:50:C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
-Input:51:C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty
-Input:52:C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg
-Input:53:C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
-Input:54:C:\Program Files\MiKTeX 2.9\tex\latex\todonotes\todonotes.sty
+Input:51:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+Input:52:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg
+Input:53:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+Input:54:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\todonotes\todonotes.sty
 Input:55:C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
 Input:56:C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
 Input:57:C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
-Input:58:C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
-Input:59:C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg
-Input:60:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty
-Input:61:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty
-Input:62:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty
-Input:63:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex
-Input:64:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex
-Input:65:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
-Input:66:C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty
-Input:67:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex
-Input:68:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty
-Input:69:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty
-Input:70:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
-Input:71:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
-Input:72:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
-Input:73:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg
-Input:74:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
-Input:75:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
-Input:76:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
-Input:77:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
-Input:78:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
-Input:79:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
-Input:80:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex
-Input:81:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex
-Input:82:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
-Input:83:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex
-Input:84:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex
-Input:85:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex
-Input:86:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
-Input:87:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex
-Input:88:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex
-Input:89:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex
-Input:90:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
-Input:91:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex
-Input:92:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
-Input:93:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
-Input:94:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
-Input:95:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
-Input:96:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
-Input:97:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
-Input:98:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
-Input:99:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
-Input:100:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
-Input:101:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
-Input:102:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
-Input:103:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
-Input:104:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
-Input:105:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
-Input:106:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
-Input:107:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
-Input:108:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
-Input:109:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
-Input:110:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex
-Input:111:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
-Input:112:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
-Input:113:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty
-Input:114:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty
-Input:115:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
-Input:116:C:\Program Files\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty
-Input:117:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
-Input:118:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex
-Input:119:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
-Input:120:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
-Input:121:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
-Input:122:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
-Input:123:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
-Input:124:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
-Input:125:C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty
-Input:126:C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty
-Input:127:C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty
-Input:128:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.aux
-Input:129:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektorganisation.aux
-Input:130:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektplanung.aux
-Input:131:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektbudget.aux
-Input:132:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Kommunikation.aux
-Input:133:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Risikomanagement.aux
-Input:134:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektvereinbarung.aux
-Input:135:C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd
-Input:136:C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
-Input:137:C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
-Input:138:C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
-Input:139:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.out
-Input:140:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.out
+Input:58:C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex
+Input:59:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Input:60:C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+Input:61:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
+Input:62:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
+Input:63:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
+Input:64:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-common.tex
+Input:65:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex
+Input:66:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+Input:67:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+Input:68:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.code.tex
+Input:69:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+Input:70:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+Input:71:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+Input:72:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+Input:73:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+Input:74:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cfg
+Input:75:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+Input:76:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+Input:77:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+Input:78:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+Input:79:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+Input:80:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex
+Input:81:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.code.tex
+Input:82:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.code.tex
+Input:83:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.code.tex
+Input:84:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex
+Input:85:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex
+Input:86:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex
+Input:87:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
+Input:88:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex
+Input:89:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex
+Input:90:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex
+Input:91:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
+Input:92:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex
+Input:93:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
+Input:94:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+Input:95:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+Input:96:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+Input:97:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+Input:98:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+Input:99:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+Input:100:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+Input:101:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+Input:102:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+Input:103:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+Input:104:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+Input:105:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+Input:106:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+Input:107:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+Input:108:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+Input:109:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+Input:110:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+Input:111:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+Input:112:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+Input:113:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+Input:114:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
+Input:115:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.sty
+Input:116:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+Input:117:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
+Input:118:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex
+Input:119:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.code.tex
+Input:120:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex
+Input:121:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+Input:122:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+Input:123:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+Input:124:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+Input:125:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+Input:126:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+Input:127:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Input:128:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Input:129:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.aux
+Input:130:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektorganisation.aux
+Input:131:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektplanung.aux
+Input:132:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektbudget.aux
+Input:133:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Kommunikation.aux
+Input:134:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Risikomanagement.aux
+Input:135:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektvereinbarung.aux
+Input:136:C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd
+Input:137:C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+Input:138:C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+Input:139:C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+Input:140:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.out
+Input:141:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.out
 Output:pdf
 Magnification:1000
 Unit:1
 X Offset:0
 Y Offset:0
 Content:
-!11369
+!12803
 {1
 [1,24:4736286,54448649:29760291,49712363,0
 h1,24:4736286,4736286:0,0,0
@@ -233,22 +234,22 @@ g1,9:19972355,13287527
 k1,9:34496577,13287527:14524222
 )
 (1,9:4661701,15347906:29834876,536337,110880
-k1,9:15783449,15347906:11121748
-h1,9:15783449,15347906:0,0,0
-x1,9:16525836,15347906
-x1,9:18962967,15347906
-g1,9:19159575,15347906
-x1,9:19749399,15347906
-g1,9:19946007,15347906
-x1,9:20645137,15347906
-(1,9:20688783,15343975:261879,489945,0
-x1,9:20950662,15343975
+k1,9:15586841,15347906:10925140
+h1,9:15586841,15347906:0,0,0
+x1,9:16329228,15347906
+x1,9:18766359,15347906
+g1,9:18962967,15347906
+x1,9:19946007,15347906
+g1,9:20142615,15347906
+x1,9:20841745,15347906
+(1,9:20885391,15343975:261879,489945,0
+x1,9:21147270,15343975
 )
-x1,9:21605358,15347906
-g1,9:21801966,15347906
-x1,9:23374830,15347906
-g1,9:23374830,15347906
-k1,9:34496578,15347906:11121748
+x1,9:21801966,15347906
+g1,9:21998574,15347906
+x1,9:23571438,15347906
+g1,9:23571438,15347906
+k1,9:34496578,15347906:10925140
 )
 (1,21:4661701,27173230:29834876,0,0
 h1,21:4661701,27173230:0,0,0
@@ -496,9 +497,9 @@ h1,24:4661701,54448649:29834876,0,0
 ]
 !8329
 }1
-Input:141:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Projektorganisation.tex
-Input:142:C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd
-!191
+Input:142:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Projektorganisation.tex
+Input:143:C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd
+!213
 {2
 [1,26:4736286,54448649:29760291,49712363,0
 [1,26:4736286,4736286:0,0,0
@@ -518,18 +519,272 @@ x1,26:34496578,3542892
 )
 ]
 [1,26:4661701,50905758:29834876,44938783,0
-(141,1:4661701,6655416:29834876,688441,204779
-(141,1:4661701,6655416:1468419,675699,0
-g141,1:4661701,6655416
-x141,1:5186402,6655416
-g141,1:6130120,6655416
+(142,1:4661701,6655416:29834876,688441,204779
+(142,1:4661701,6655416:1468419,675699,0
+g142,1:4661701,6655416
+x142,1:5186402,6655416
+g142,1:6130120,6655416
 )
-x141,1:7126669,6655416
-x141,1:10254116,6655416
-x141,1:14959454,6655416
-k141,1:34496578,6655416:19537124
-g141,1:34496578,6655416
+x142,1:7126669,6655416
+x142,1:10254116,6655416
+x142,1:14959454,6655416
+k142,1:34496578,6655416:19537124
+g142,1:34496578,6655416
 )
+(142,4:4661701,8443818:29834876,489408,155358
+x142,4:5777583,8443818
+k142,3:6021528,8443818:243945
+x142,3:6459992,8443818
+x142,3:7605298,8443818
+k142,3:7849243,8443818:243945
+x142,3:8526670,8443818
+x142,3:9882225,8443818
+k142,3:10126170,8443818:243945
+x142,3:11082743,8443818
+k142,3:11326688,8443818:243945
+x142,3:12123943,8443818
+x142,3:13160179,8443818
+k142,3:13404124,8443818:243945
+x142,3:14441062,8443818
+x142,3:15517471,8443818
+x142,3:16972075,8443818
+k142,3:17216084,8443818:244009
+x142,3:18252311,8443818
+x142,3:19248356,8443818
+k142,3:19492301,8443818:243945
+x142,3:20408692,8443818
+k142,3:20652636,8443818:243944
+x142,3:21609209,8443818
+x142,3:22206973,8443818
+x142,3:23123364,8443818
+k142,3:23367309,8443818:243945
+x142,3:23885427,8443818
+x142,3:25479946,8443818
+x142,3:25838755,8443818
+x142,3:26146615,8443818
+x142,3:27103179,8443818
+x142,3:28379097,8443818
+k142,3:28623042,8443818:243945
+x142,3:29181342,8443818
+k142,3:29425287,8443818:243945
+x142,3:30541169,8443818
+k142,3:30785114,8443818:243945
+x142,3:32259814,8443818
+x142,3:33296050,8443818
+k142,3:33539995,8443818:243945
+x142,3:34257613,8443818
+x142,3:34496577,8443818
+k142,4:34496577,8443818:0
+)
+(142,4:4661701,9335108:29834876,489408,155358
+x142,4:5179810,9335108
+x142,4:6535356,9335108
+k142,3:6795487,9335108:260131
+x142,3:7672414,9335108
+x142,3:9127018,9335108
+k142,3:9387633,9335108:260615
+x142,3:10423860,9335108
+k142,3:10683991,9335108:260131
+x142,3:12158691,9335108
+x142,3:13194927,9335108
+k142,3:13455057,9335108:260130
+x142,3:14651312,9335108
+x142,3:15169430,9335108
+x142,3:15480873,9335108
+x142,3:16038455,9335108
+k142,3:16298586,9335108:260131
+x142,3:17375013,9335108
+k142,3:17635144,9335108:260131
+x142,3:19069653,9335108
+x142,3:19587771,9335108
+x142,3:19899214,9335108
+x142,3:20456796,9335108
+k142,3:20716927,9335108:260131
+x142,3:21913182,9335108
+k142,3:22173313,9335108:260131
+x142,3:22931113,9335108
+k142,3:23191244,9335108:260131
+x142,3:23868671,9335108
+x142,3:24546098,9335108
+x142,3:25842084,9335108
+k142,3:26102295,9335108:260211
+x142,3:26819904,9335108
+x142,3:27736295,9335108
+k142,3:27996426,9335108:260131
+x142,3:29072853,9335108
+k142,3:29332984,9335108:260131
+x142,3:29851102,9335108
+x142,3:30130974,9335108
+x142,3:31167210,9335108
+x142,3:32123783,9335108
+k142,3:32383914,9335108:260131
+x142,3:32742723,9335108
+(142,3:32802646,9331521:238964,447075,0
+x142,3:33041610,9331521
+)
+x142,3:34496577,9335108
+k142,3:34496577,9335108:0
+)
+(142,4:4661701,10226398:29834876,489408,155358
+x142,4:5538619,10226398
+k142,3:5738124,10226398:199505
+x142,3:6535388,10226398
+x142,3:7690743,10226398
+k142,3:7890248,10226398:199505
+x142,3:8767166,10226398
+k142,3:8966671,10226398:199505
+x142,3:9166162,10226398
+x142,3:9484780,10226398
+x142,3:10503066,10226398
+x142,3:10902048,10226398
+x142,3:11938284,10226398
+k142,3:12137789,10226398:199505
+x142,3:13612489,10226398
+x142,3:14648725,10226398
+k142,3:14848230,10226398:199505
+x142,3:15565848,10226398
+x142,3:16801558,10226398
+(142,3:16861481,10222811:238964,447075,0
+x142,3:17100445,10222811
+)
+x142,3:18535307,10226398
+k142,3:18734933,10226398:199626
+x142,3:19771160,10226398
+k142,3:19970665,10226398:199505
+x142,3:20170156,10226398
+x142,3:20488774,10226398
+x142,3:21507060,10226398
+x142,3:21906042,10226398
+x142,3:22942278,10226398
+k142,3:23141783,10226398:199505
+x142,3:24257674,10226398
+x142,3:24616483,10226398
+x142,3:24931517,10226398
+x142,3:25967753,10226398
+x142,3:26645180,10226398
+x142,3:27402253,10226398
+x142,3:28398298,10226398
+k142,3:28597803,10226398:199505
+x142,3:29514194,10226398
+k142,3:29713699,10226398:199505
+x142,3:30590617,10226398
+x142,3:31427344,10226398
+x142,3:32463580,10226398
+k142,3:32663085,10226398:199505
+x142,3:33380694,10226398
+x142,3:34257613,10226398
+x142,3:34496577,10226398
+k142,4:34496577,10226398:0
+)
+(142,4:4661701,11117688:29834876,489408,155358
+x142,4:5697937,11117688
+k142,3:5879712,11117688:181775
+x142,3:7075967,11117688
+k142,3:7257741,11117688:181774
+x142,3:8015532,11117688
+k142,3:8197307,11117688:181775
+x142,3:8715425,11117688
+x142,3:8954389,11117688
+x142,3:9300285,11117688
+x142,3:9615319,11117688
+x142,3:10173619,11117688
+x142,3:12206610,11117688
+k142,3:12388384,11117688:181774
+x142,3:13504275,11117688
+x142,3:14262066,11117688
+x142,3:15697302,11117688
+k142,3:15879077,11117688:181775
+x142,3:16237886,11117688
+x142,3:16476850,11117688
+k142,3:16658625,11117688:181775
+x142,3:16977243,11117688
+x142,3:18571762,11117688
+x142,3:19827575,11117688
+k142,3:20009352,11117688:181777
+x142,3:21364206,11117688
+x142,3:21603170,11117688
+x142,3:22592741,11117688
+k142,3:22774515,11117688:181774
+x142,3:23970770,11117688
+k142,3:24152545,11117688:181775
+x142,3:25029463,11117688
+k142,3:25211238,11117688:181775
+x142,3:26088156,11117688
+x142,3:26924883,11117688
+x142,3:27961119,11117688
+k142,3:28142893,11117688:181774
+x142,3:28541884,11117688
+x142,3:29527171,11117688
+k142,3:29708946,11117688:181775
+x142,3:30865019,11117688
+x142,3:32140210,11117688
+k142,3:32321984,11117688:181774
+x142,3:33398411,11117688
+k142,3:33580186,11117688:181775
+x142,3:34496577,11117688
+k142,3:34496577,11117688:0
+)
+(142,4:4661701,12008978:29834876,489408,155358
+x142,4:5777592,12008978
+x142,4:6893474,12008978
+x142,4:7570901,12008978
+x142,4:8487292,12008978
+g142,3:8666696,12008978
+x142,3:9583087,12008978
+x142,3:10499478,12008978
+(142,3:10559401,12005391:238964,447075,0
+x142,3:10798365,12005391
+)
+x142,3:11834955,12008978
+k142,4:34496577,12008978:22661622
+g142,4:34496577,12008978
+)
+[142,10:4661701,44680344:29834876,31729576,0
+[142,10:4661701,44680344:29834876,31729576,0
+(142,8:4661701,43238552:29834876,30287784,0
+k142,8:7645144,43238552:2983443
+h142,7:7645144,43238552:0,0,0
+(142,7:7645144,43238552:23867991,30287784,0
+(142,7:7645144,43238552:23868150,30287859,0
+(142,7:7645144,43238552:23868150,30287859,0
+(142,7:7645144,43238552:0,34859070,0
+(142,7:7645144,43238552:27470463,34859070,0
+)
+k142,7:7645143,43238552:-27470464
+)
+)
+)
+)
+g142,8:31513135,43238552
+k142,8:34496577,43238552:2983442
+)
+(142,8:4661701,44444412:29834876,550500,235932
+h142,8:4661701,44444412:0,0,0
+g142,8:5317061,44444412
+[142,8:5317061,44444412:28524156,550500,235932
+(142,8:5317061,44444412:28524156,550500,235932
+k142,8:15821339,44444412:10504278
+h142,8:15821339,44444412:0,0,0
+x142,8:16658883,44444412
+x142,8:18801880,44444412
+g142,8:18965720,44444412
+x142,8:19511632,44444412
+g142,8:19675472,44444412
+r142,8:19675472,44444412:0,786432,235932
+g142,8:19675472,44444412
+x142,8:20366872,44444412
+x142,8:20682760,44444412
+x142,8:23336940,44444412
+r142,8:23336940,44444412:0,235932,235932
+g142,8:23336940,44444412
+k142,8:33841218,44444412:10504278
+)
+]
+k142,8:34496577,44444412:655360
+g142,8:34496577,44444412
+)
+]
+]
 ]
 (1,26:4661701,54448649:29834876,0,0
 h1,26:4661701,54448649:29834876,0,0
@@ -537,11 +792,53 @@ h1,26:4661701,54448649:29834876,0,0
 ]
 ]
 ]
-!847
+!7472
 }2
-Input:143:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Projektbudget.tex
-!119
+Input:144:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Projektplanung.tex
+!143
 {3
+[1,27:4736286,54448649:29760291,49712363,0
+[1,27:4736286,4736286:0,0,0
+(1,27:4736286,2690679:0,0,0
+k1,27:4736286,2690679:140366
+)
+]
+[1,27:4736286,54448649:29760291,49712363,0
+h1,27:4736286,4736286:0,0,0
+[1,27:4661701,54448649:29834876,51692189,0
+[1,27:4661701,3542892:29834876,786432,0
+(1,27:4661701,3542892:29834876,489408,10039
+(1,27:4661701,3542892:29834876,489408,10039
+k1,27:34137769,3542892:29476068
+x1,27:34496578,3542892
+)
+)
+]
+[1,27:4661701,50905758:29834876,44938783,0
+(144,1:4661701,6655416:29834876,688441,204779
+(144,1:4661701,6655416:1468419,675699,0
+g144,1:4661701,6655416
+x144,1:5186402,6655416
+g144,1:6130120,6655416
+)
+x144,1:7126669,6655416
+x144,1:11250674,6655416
+x144,1:12971068,6655416
+k144,1:34496576,6655416:21525508
+g144,1:34496576,6655416
+)
+]
+(1,27:4661701,54448649:29834876,0,0
+h1,27:4661701,54448649:29834876,0,0
+)
+]
+]
+]
+!855
+}3
+Input:145:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Projektbudget.tex
+!141
+{4
 [1,28:4736286,54448649:29760291,49712363,0
 [1,28:4736286,4736286:0,0,0
 (1,28:4736286,2690679:0,0,0
@@ -552,45 +849,26 @@ k1,28:4736286,2690679:140366
 h1,28:4736286,4736286:0,0,0
 [1,28:4661701,54448649:29834876,51692189,0
 [1,28:4661701,3542892:29834876,786432,0
-(1,28:4661701,3542892:29834876,489408,10039
-(1,28:4661701,3542892:29834876,489408,10039
+(1,28:4661701,3542892:29834876,489408,0
+(1,28:4661701,3542892:29834876,489408,0
 k1,28:34137769,3542892:29476068
 x1,28:34496578,3542892
 )
 )
 ]
 [1,28:4661701,50905758:29834876,44938783,0
-(143,1:4661701,6655416:29834876,688441,204779
-(143,1:4661701,6655416:1468419,675699,0
-g143,1:4661701,6655416
-x143,1:5186402,6655416
-g143,1:6130120,6655416
+(145,1:4661701,6655416:29834876,688441,204779
+(145,1:4661701,6655416:1468419,675699,17452
+g145,1:4661701,6655416
+x145,1:5186402,6655416
+g145,1:6130120,6655416
 )
-x143,1:7126669,6655416
-x143,1:9887019,6655416
-x143,1:11597979,6655416
-x143,1:12446369,6655416
-k143,1:34496577,6655416:22050208
-g143,1:34496577,6655416
-)
-(1,28:4661701,8443818:29834876,489408,10039
-x1,28:4900665,8443818
-g143,3:5080069,8443818
-x143,3:5598187,8443818
-x143,3:6467930,8443818
-g143,3:6647334,8443818
-x143,3:7205634,8443818
-g143,3:7385038,8443818
-x143,3:8062465,8443818
-g143,3:8241869,8443818
-x143,3:9595997,8443818
-g143,3:9775401,8443818
-(143,3:9835324,8440231:238964,447075,0
-x143,3:10074288,8440231
-)
-x143,3:10134210,8443818
-k1,28:34496578,8443818:24362368
-g1,28:34496578,8443818
+x145,1:7126669,6655416
+x145,1:9887019,6655416
+x145,1:11597979,6655416
+x145,1:12446369,6655416
+k145,1:34496577,6655416:22050208
+g145,1:34496577,6655416
 )
 ]
 (1,28:4661701,54448649:29834876,0,0
@@ -599,11 +877,96 @@ h1,28:4661701,54448649:29834876,0,0
 ]
 ]
 ]
-!1320
-}3
-Input:144:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Projektvereinbarung.tex
-!126
-{4
+!874
+}4
+Input:146:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Kommunikation.tex
+!141
+{5
+[1,29:4736286,54448649:29760291,49712363,0
+[1,29:4736286,4736286:0,0,0
+(1,29:4736286,2690679:0,0,0
+k1,29:4736286,2690679:140366
+)
+]
+[1,29:4736286,54448649:29760291,49712363,0
+h1,29:4736286,4736286:0,0,0
+[1,29:4661701,54448649:29834876,51692189,0
+[1,29:4661701,3542892:29834876,786432,0
+(1,29:4661701,3542892:29834876,489408,10039
+(1,29:4661701,3542892:29834876,489408,10039
+k1,29:34137769,3542892:29476068
+x1,29:34496578,3542892
+)
+)
+]
+[1,29:4661701,50905758:29834876,44938783,0
+(146,1:4661701,6655416:29834876,688441,9429
+(146,1:4661701,6655416:1468419,675699,0
+g146,1:4661701,6655416
+x146,1:5186402,6655416
+g146,1:6130120,6655416
+)
+x146,1:6811481,6655416
+x146,1:9032974,6655416
+x146,1:13208888,6655416
+k146,1:34496576,6655416:21287688
+g146,1:34496576,6655416
+)
+]
+(1,29:4661701,54448649:29834876,0,0
+h1,29:4661701,54448649:29834876,0,0
+)
+]
+]
+]
+!852
+}5
+Input:147:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Risikomanagement.tex
+!144
+{6
+[1,30:4736286,54448649:29760291,49712363,0
+[1,30:4736286,4736286:0,0,0
+(1,30:4736286,2690679:0,0,0
+k1,30:4736286,2690679:140366
+)
+]
+[1,30:4736286,54448649:29760291,49712363,0
+h1,30:4736286,4736286:0,0,0
+[1,30:4661701,54448649:29834876,51692189,0
+[1,30:4661701,3542892:29834876,786432,0
+(1,30:4661701,3542892:29834876,489408,10039
+(1,30:4661701,3542892:29834876,489408,10039
+k1,30:34137769,3542892:29476068
+x1,30:34496578,3542892
+)
+)
+]
+[1,30:4661701,50905758:29834876,44938783,0
+(147,1:4661701,6655416:29834876,688441,204779
+(147,1:4661701,6655416:1468419,658713,17452
+g147,1:4661701,6655416
+x147,1:5186402,6655416
+g147,1:6130120,6655416
+)
+x147,1:8385571,6655416
+x147,1:11413002,6655416
+x147,1:11980176,6655416
+x147,1:14768833,6655416
+k147,1:34496577,6655416:19727744
+g147,1:34496577,6655416
+)
+]
+(1,30:4661701,54448649:29834876,0,0
+h1,30:4661701,54448649:29834876,0,0
+)
+]
+]
+]
+!883
+}6
+Input:148:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\Projektvereinbarung.tex
+!147
+{7
 [1,31:4736286,54448649:29760291,49712363,0
 [1,31:4736286,4736286:0,0,0
 (1,31:4736286,2690679:0,0,0
@@ -614,24 +977,24 @@ k1,31:4736286,2690679:140366
 h1,31:4736286,4736286:0,0,0
 [1,31:4661701,54448649:29834876,51692189,0
 [1,31:4661701,3542892:29834876,786432,0
-(1,31:4661701,3542892:29834876,489408,0
-(1,31:4661701,3542892:29834876,489408,0
+(1,31:4661701,3542892:29834876,479368,5379
+(1,31:4661701,3542892:29834876,479368,5379
 k1,31:34137769,3542892:29476068
 x1,31:34496578,3542892
 )
 )
 ]
 [1,31:4661701,50905758:29834876,44938783,0
-(144,1:4661701,6655416:29834876,688441,204779
-(144,1:4661701,6655416:1468419,675699,17452
-g144,1:4661701,6655416
-x144,1:5186402,6655416
-g144,1:6130120,6655416
+(148,1:4661701,6655416:29834876,688441,204779
+(148,1:4661701,6655416:1468419,675699,17452
+g148,1:4661701,6655416
+x148,1:5186402,6655416
+g148,1:6130120,6655416
 )
-x144,1:7126669,6655416
-x144,1:15288801,6655416
-k144,1:34496577,6655416:19207776
-g144,1:34496577,6655416
+x148,1:7126669,6655416
+x148,1:15288801,6655416
+k148,1:34496577,6655416:19207776
+g148,1:34496577,6655416
 )
 ]
 (1,31:4661701,54448649:29834876,0,0
@@ -640,17 +1003,17 @@ h1,31:4661701,54448649:29834876,0,0
 ]
 ]
 ]
-!827
-}4
-Input:145:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.aux
-Input:146:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektorganisation.aux
-Input:147:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektplanung.aux
-Input:148:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektbudget.aux
-Input:149:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Kommunikation.aux
-Input:150:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Risikomanagement.aux
-Input:151:D:\FHNW\4_Semester\pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektvereinbarung.aux
-!877
+!833
+}7
+Input:149:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Pflichtenheft_Organisatorischer_Teil_pro4_Team2.aux
+Input:150:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektorganisation.aux
+Input:151:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektplanung.aux
+Input:152:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektbudget.aux
+Input:153:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Kommunikation.aux
+Input:154:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Risikomanagement.aux
+Input:155:C:\Users\David\Documents\FHNW\4_Semester\Pro4\Documentation_pro4E_Team2\01_Pflichtenheft_Organisatorisch\build\Projektvereinbarung.aux
+!1031
 Postamble:
-Count:362
-!26
+Count:552
+!27
 Post scriptum:
