@@ -23,13 +23,14 @@ Im ersten Schritt in der Abbildung \ref{fig:Software_Flussdiagramm_Sensorplatine
 \subsection{Kontrollplatine}
 Die Meldeplatine wird die Zentrale aller Sensorplatinen sein. Sie hat die Aufgabe den Betrieb der Anlage zu überwachen sowie die gesammelten und übermittelten Daten der Sensorplatinen auszuwerten. Für einen detektierten Fehler wird ein Relaiskontakt geschalten und die fehlerhafte Stelle auf dem Display eingeblendet. Der gesamte Verlauf ist in Abbildung \ref{fig:Scheme_report_board} dargestellt.
 
-\begin{figure}[htbp] 
+\begin{figure}[h!] 
   \centering
      \includegraphics[width=0.5\textwidth]{graphics/Scheme_report_board}
   \caption{Flussdiagramm Verlauf Programm Meldeplatine}
   \label{fig:Scheme_report_board}
 \end{figure}
 
+\newpage
 Damit die Meldeplatine die Anlage überwachen kann muss sichergestellt werden, dass alle Messwerte empfangen werden. Zu diesem Zweck erstellt die Meldeplatine bei der ersten Inbetriebnahme ein Register der Sensorplatinen (``Build register''). Danach beginnt sie die Messungen der Sensorplatinen zu empfangen (``Receive values'') und anschliessend auszuwerten (``Examine values''). Es besteht die Möglichkeit, dass eine Sensorplatine zur Zeit offline ist, fehlerhaft oder gleichzeitig mit einer anderen Sensorplatine Informationen sendet. Falls das der Fall sein sollte kommt es zu einer Warnung. Kommunizieren nach einer Wartezeit immernoch nicht alle Sensorplatinen richtig, kommt es zu einem Fehler mit betätigen des Relaiskontakts und einer Meldung auf dem Display.\\
 Der Algorithmus für die Datenauswertung funktioniert nach dem arithemtischen Mittel. Es sagt aus, dass alle Datenpunkte addiert geteilt durch die Anzahl Datenpunkte einen Mittelwert ergibt. Entspricht ein einzelner Datenpunkt nicht dem Mittelwert ist dieser ein Fehler. Um anschliessend das fehlerhafte Modul zu lokalisieren bekommt jede Sensorplatine eine Identifikationsnummer, die alle in einem Anlagenschema abgelegt sind.
 %\end{document}
