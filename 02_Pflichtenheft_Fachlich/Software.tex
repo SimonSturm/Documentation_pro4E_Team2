@@ -8,7 +8,7 @@
 Die Anforderung des Auftraggebers beinhaltet, dass die Kommunikation zwischen Sensorplatine und Meldezentrale über die Powerline erfolgt und keine zusätzliche Leitung beanspruchen darf. Für die drahtlose Übertragung war die Idee die Kommunikation über ein kabelloses System, wie Bluetooth oder Wireless zu verwenden. Diese Idee wurde aufgrund der unbekannten Distanzen zwischen der Sensor- und Meldeplatine verworfen. Die Kommunikation über die Powerline verlangt, dass die zu übertragenden Daten im richtigen Format in die Leitung eingekoppelt werden. Für diese Einkopplung wird ein fertiger Transceiver und ein Kommunikationsprotokoll verwendet. Es wird auf der Sensorplatine ein Mikrocontroller ATMega328 verwendet.
 
 
-\subsubsection{Sensorplatine}
+\subsection{Sensorplatine}
 Die Aufgabe der Sensorplatine besteht aus der Verarbeitung der gemessenen Daten und der Übermittlung der Daten. In der Abbildung \ref{fig:Software_Flussdiagramm_Sensorplatine} ist der Verlauf dieser Verarbeitung ersichtlich.
 
 \begin{figure}[htbp] 
@@ -20,7 +20,7 @@ Die Aufgabe der Sensorplatine besteht aus der Verarbeitung der gemessenen Daten 
 
 Im ersten Schritt in der Abbildung \ref{fig:Software_Flussdiagramm_Sensorplatine} werden von der Messung die Daten eingelesen und in verwendbare Datentypen gespeichert. Die Kommunikation zum Transceiver wird über eine serielle asynchrone Schnittstelle stattfinden. \\Der Modulator wird die Messdaten auf die Leitung, Powerline Communication, koppeln.
 
-\subsubsection{Kontrollplatine}
+\subsection{Kontrollplatine}
 Die Meldeplatine wird die Zentrale aller Sensorplatinen sein. Sie hat die Aufgabe den Betrieb der Anlage zu überwachen sowie die gesammelten und übermittelten Daten der Sensorplatinen auszuwerten. Für einen detektierten Fehler wird ein Relaiskontakt geschalten und die fehlerhafte Stelle auf dem Display eingeblendet. Der gesamte Verlauf ist in Abbildung \ref{fig:Scheme_report_board} dargestellt.
 
 \begin{figure}[htbp] 
