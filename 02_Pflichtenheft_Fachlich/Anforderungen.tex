@@ -1,0 +1,33 @@
+%\documentclass[a4paper]{fhnwreport} %Legt grundlegende Formatierungen wie Schriftarten, Ort Seitenzahlen etc. fest.
+%
+%\graphicspath{{./graphics/}}%Change according to graphics folder!
+%
+%\begin{document}
+\section{Anforderungen}
+
+\subsection{Sensorplattine}
+\begin{enumerate}
+\item Der Einbau in die Anschlussbox jedes PV-Moduls ist möglich.
+\item Die Versorgung geschieht direkt vom Modul (ohne Pufferung).
+\item Mit Strom bis 10 A wird gearbeitet.
+\item	Die Spannungsmessung erfolgt, mit einer Genauigkeit von ca. 0.1 V, im Bereich zwischen 12 V bis 60 V.
+\item	Die Modulspannung wird über die Powerleitung an das zentrale Meldegerät gesendet.
+\end{enumerate}
+
+\subsection{Meldegerät}
+\begin{enumerate}
+\item	Der Einbau in den Schaltschrank ist möglich.
+\item	Ein Gehäuse ist vorhanden.
+\item	Die Versorgung erfolgt ab Netz (230 V/ 50 Hz).
+\item	Das Gerät empfängt und vergleicht die gemeldeten Spannungen der einzelnen Module.
+\item	Durch Abweichung der Spannung wird für oder gegen eine Fehlermeldung (über Relaiskontakt) entschieden.
+\item	Im Falle eines Defektes wird das fehlerhafte Modul ermittelt und angezeigt (LED).
+\end{enumerate}
+
+\subsection{Wunschziele}
+\begin{enumerate}
+\item	Fehler- und Statusmeldungen können über SMS versendet werden.
+\item	Auch der Strom in jedem Modul wird gemessen und gemeldet.
+\item	Die Temperatur in jedem Modul wird gemessen und gemeldet.
+\end{enumerate}
+%\end{document}
