@@ -51,7 +51,7 @@ Die Speisung der Kontrollplatine erfolgt 체ber das Netz. Die Netzspannung wird �
 Da mehrere Bauteile noch nicht definiert sind, kann die genaue DC Spannung noch nicht bestimmt werden. Die Speisung speist den Mikrocontroller, den Powerline transceiver und die Anzeigeelemente.
 
 \subsubsection{Powerline transceiver}
-Es wird der selbe Powerline transceiver wie bei der Sensorplatine verwendet. Dieser hat die Aufgabe die Modulierten Signale 체ber die Powerline zu empfangen und diese dann zu entmodulieren. Danach werden die verarbeiteten Signale an den Mikrocontroller 체bermittelt.
+Es wird der selbe Powerline transceiver wie bei der Sensorplatine verwendet. Dieser hat die Aufgabe die Modulierten Signale 체ber die Powerline zu empfangen und diese dann zu demodulieren. Danach werden die verarbeiteten Signale an den Mikrocontroller 체bermittelt.
 
 \subsubsection{Microkontroller}
 Die Signale werden vom Mikrocontroller empfangen und abgespeichert. Wenn alle Signale abgespeichert sind, werden diese ausgewertet. Danach wird entschieden ob die einzelnen Panels funtionst체chtig oder defekt sind. Als Microkontroller wird der ATMega328 verwendet.
