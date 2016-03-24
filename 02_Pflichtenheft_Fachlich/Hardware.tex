@@ -22,7 +22,7 @@ Die Kommunikation zwischen diesen beiden Platinen darf keine zusätzlichen Kabel
 \subsection{Sensorplatine}
 
 
-Die Sensorplatine wird auf der Rückseite des Solarpanels angebracht. Es wird vom Solarpanel selbst gespiesen, weshalb auf möglichst kleine Leistungen geachtet werden muss. Die momentanen Spannungswerte des Solarpanels werden über einen AD-Wandler eingelesen und mit einem Mikrocontroller für den Powerline Transceiver entsprechend kodiert. Die kodierten Spannungswerte werden dann mittels eines Powerline Transceivers auf die Powerline eingekoppelt und so auf die Kontrollplatine übertragen.
+Die Sensorplatine wird auf der Rückseite des Solarpanels angebracht. Es wird vom Solarpanel selbst gespiesen, weshalb auf möglichst kleine Leistungen geachtet werden muss. Die momentanen Spannungswerte des Solarpanels werden über einen AD-Wandler eingelesen und mit einem Mikrocontroller für den Powerline Transceiver entsprechend kodiert. Die kodierten Spannungswerte werden dann mittels eines Powerline Transceivers auf die Powerline eingekoppelt und so auf die Kontrollplatine übertragen. Für die Identifikation des Solarpanels kann auf der Platine mittels DIL-Schaltern eine binäre ID eingestellt werden.
 
 \newpage
 \subsubsection{Powerline Transceiver}
@@ -54,7 +54,7 @@ Da mehrere Bauteile noch nicht definiert sind, kann die genaue DC Spannung noch 
 Es wird der selbe Powerline transceiver wie bei der Sensorplatine verwendet. Dieser hat die Aufgabe die Modulierten Signale über die Powerline zu empfangen und diese dann zu entmodulieren. Danach werden die verarbeiteten Signale an den Mikrocontroller übermittelt.
 
 \subsubsection{Microkontroller}
-Die Signale werden vom Mikrocontroller empfangen und abgespeichert. Wenn alle Signale abgespeichert sind, werden diese ausgewertet. Danach wird entschieden ob die einzelnen Panels funtionstüchtig oder defekt sind.
+Die Signale werden vom Mikrocontroller empfangen und abgespeichert. Wenn alle Signale abgespeichert sind, werden diese ausgewertet. Danach wird entschieden ob die einzelnen Panels funtionstüchtig oder defekt sind. Als Microkontroller wird der ATMega328 verwendet.
 
 \subsubsection{Anzeige Elemente}
 Als Anzeige Element wird ein Display verwendet. An diesem kann abgelesen werden, welche Panels defekt sind. Zudem sind 2 LEDs vorhanden(Grün: ok, Rot: defekt).
