@@ -5,7 +5,7 @@
 %\begin{document}
 
 \section{Software}
-Die Anforderung des Auftraggebers beinhaltet, dass die Kommunikation zwischen Sensorplatine und Meldezentrale über die Powerline erfolgt und keine zusätzliche Leitung beanspruchen darf. Für die drahtlose Übertragung war die Idee die Kommunikation über ein kabelloses System, wie Bluetooth oder Wireless zu verwenden. Diese Idee wurde aufgrund der unbekannten Distanzen zwischen der Sensor- und Meldeplatine verworfen. Die Kommunikation über die Powerline verlangt, dass die zu übertragenden Daten im richtigen Format in die Leitung eingekoppelt werden. Für diese Einkopplung wird ein fertiger Transceiver und ein Kommunikationsprotokoll verwendet. Es wird auf der Sensorplatine ein Mikrocontroller ATMega328 verwendet. \todo{Kommt das nicht in den HW Teil?}
+Die Anforderung des Auftraggebers beinhaltet, dass die Kommunikation zwischen Sensorplatine und Meldezentrale über die Powerline erfolgt und keine zusätzliche Leitung beanspruchen darf. Für die drahtlose Übertragung war die Idee die Kommunikation über ein kabelloses System, wie Bluetooth oder Wireless zu verwenden. Diese Idee wurde aufgrund der unbekannten Distanzen zwischen der Sensor- und Meldeplatine verworfen. Die Kommunikation über die Powerline verlangt, dass die zu übertragenden Daten im richtigen Format in die Leitung eingekoppelt werden. Für diese Einkopplung wird ein fertiger Transceiver und ein Kommunikationsprotokoll verwendet. Es wird auf der Sensorplatine ein Mikrocontroller ATMega328 verwendet.
 
 
 \subsubsection{Sensorplatine}
@@ -25,11 +25,11 @@ Die Meldeplatine wird die Zentrale aller Sensorplatinen sein. Sie hat die Aufgab
 
 \begin{figure}[htbp] 
   \centering
-     \includegraphics[width=1\textwidth]{graphics/Scheme_report_board}
+     \includegraphics[width=0.5\textwidth]{graphics/Scheme_report_board}
   \caption{Flussdiagramm Verlauf Programm Meldeplatine}
   \label{fig:Scheme_report_board}
 \end{figure}
 
-Eine zuverlässige und ganzheitliche Überwachung der Anlage setzt die einwandfreie Kommunikation zwischen Sensorplatine und Meldeplatine voraus. Darum prüft die Meldeplatine als erstes die Verbindung (Abbildung \ref{fig:Scheme_report_board}: ``All Sensorboards online?'') zu den einzelnen Sensorplatinen. Die Meldeplatine wird dann die Abfrage der Messresultate geordnet koordinieren (``Ask Sensorboards for values'') und jeweils bestätigen. Im dritten Schritt wird die Menge an Messungen ausgewertet (``Examine values'') mit einem Algorithmus. Falls dann ein Fehler (``Error?'') detektiert wird schaltet ein Relaiskontakt ein externes Meldenetz. Zusätzlich wird der genaue Standort des Fehlers auf dem Display angezeigt.\\
-Der Algorithmus für die Datenauswertung funktioniert nach dem arithemtischen Mittel. Es sagt aus, dass alle Datenpunkte addiert geteilt durch die Anzahl Datenpunkte einen Mittelwert ergibt. Entspricht ein einzelner Datenpunkt nicht dem Mittelwert ist dieser somit ein Fehler. Um anschliessend das fehlerhafte Modul zu lokalisieren bekommt jede Sensorplatine eine Identifikationsnummer, die alle in einem Anlagenschema hinterlegt sind.
+Damit die Meldeplatine die Anlage überwachen kann muss sichergestellt werden, dass alle Messwerte empfangen werden. Zu diesem Zweck erstellt die Meldeplatine bei der ersten Inbetriebnahme ein Register der Sensorplatinen (``Build register''). Danach beginnt sie die Messungen der Sensorplatinen zu empfangen (``Receive values'') und anschliessend auszuwerten (``Examine values''). Es besteht die Möglichkeit, dass eine Sensorplatine zur Zeit offline ist, fehlerhaft oder gleichzeitig mit einer anderen Sensorplatine Informationen sendet. Falls das der Fall sein sollte kommt es zu einer Warnung. Kommunizieren nach einer Wartezeit immernoch nicht alle Sensorplatinen richtig, kommt es zu einem Fehler mit betätigen des Relaiskontakts und einer Meldung auf dem Display.\\
+Der Algorithmus für die Datenauswertung funktioniert nach dem arithemtischen Mittel. Es sagt aus, dass alle Datenpunkte addiert geteilt durch die Anzahl Datenpunkte einen Mittelwert ergibt. Entspricht ein einzelner Datenpunkt nicht dem Mittelwert ist dieser ein Fehler. Um anschliessend das fehlerhafte Modul zu lokalisieren bekommt jede Sensorplatine eine Identifikationsnummer, die alle in einem Anlagenschema abgelegt sind.
 %\end{document}
