@@ -19,7 +19,9 @@ Die Kommunikation zwischen diesen beiden Platinen darf keine zusätzlichen Kabel
 \label{fig::Hardwarekonzept}%
 \end{figure}
 
-\subsection{Sensorplatine}
+\begin{flushright}
+•
+\end{flushright}\subsection{Sensorplatine}
 
 
 Die Sensorplatine wird auf der Rückseite des Solarpanels angebracht. Es wird vom Solarpanel selbst gespiesen, weshalb auf möglichst kleine Leistungen geachtet werden muss. Die momentanen Spannungswerte des Solarpanels werden über einen AD-Wandler eingelesen und mit einem Mikrocontroller für den Powerline Transceiver entsprechend kodiert. Die kodierten Spannungswerte werden dann mittels eines Powerline Transceivers auf die Powerline eingekoppelt und so auf die Kontrollplatine übertragen. Für die Identifikation des Solarpanels kann auf der Platine mittels DIL-Schaltern eine binäre ID eingestellt werden.
