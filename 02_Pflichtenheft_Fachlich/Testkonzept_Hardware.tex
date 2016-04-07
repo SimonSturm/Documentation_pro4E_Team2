@@ -1,0 +1,18 @@
+%\documentclass[a4paper]{fhnwreport} %Legt grundlegende Formatierungen wie Schriftarten, Ort Seitenzahlen etc. fest.
+%
+%\graphicspath{{./graphics/}}%Change according to graphics folder!
+%
+%\begin{document}
+\section{Testkonzept}
+
+Das Testkonzept soll die folgenden Funktionen überprüfen:
+\begin{itemize}
+	\item Spannungsmessung
+	\item Übertragung von Informationen über die Powerline
+	\item Fehlermeldung bei inkorrekten Spannungsmesswerten (Diode und Relais)
+	\item Korrekte Identifikation einer fehlerhaften Solarzelle
+	\item Erkennen von fehlerhaften Informationen, welche über die Powerline übertragen wurden (Kollison mehrerer gleichzeitiger Übertragungen)
+\end{itemize}
+
+Um dies sicherzustellen wird eine Solarzelle mittels eines Simulators emuliert und an den Sensor-Print angeschlossen. Es soll dann mit Referenzmessgeräten überprüft werden ob die Printinterne Spannungsmessung korrekt funktioniert und diese Informationen über die Powerline übertragen werden. 
+%\end{document}
