@@ -3,9 +3,11 @@
 %\graphicspath{{./graphics/}}%Change according to graphics folder!
 %
 %\begin{document}
-\section{Anforderungen}
-
-\subsection{Sensorplattine}
+\section{Übersicht}
+\subsection{Ausgangslage}
+Ein grosses Problem beim Unterhalt von Solaranlagen ist die Überwachung. Defekte oder stark verschmutzte Module bleiben oft lange unentdeckt, was sich enorm auf den Energiegewinn auswirkt. Um solche Probleme zu erkennen und zu identifizieren, wird ein Überwachungssystem, bestehend aus einer Sensorplatine und einem Meldegerät, hergestellt. Solche Sensorplatinen werden an jedem Solarmodul montiert und kommunizieren mit einem einzigen zentralen Meldegerät .
+\subsection{Anforderungen}
+\subsubsection{Sensorplattine}
 \begin{enumerate}
 \item Damit der Einbau in die Anschlussbox jedes PV-Moduls möglich ist, soll die Platine die Masse 80mm/35mm/20mm nicht überschreiten.
 \item Die Versorgung geschieht direkt vom Modul (ohne Pufferung).
@@ -16,22 +18,37 @@
 \item Nach der Erstinstallation soll nach spätestens einer Stunde jede Platine ihre Information an die Zentrale gesendet haben.
 \end{enumerate}
 
-\subsection{Meldegerät}
+\subsubsection{Meldegerät}
 \begin{enumerate}
-\item	Für bis zu 50 Module pro String und maximal 5 Strings soll das System ausgerichtet sein. Mit Modulen der Grösse 1.31m * 1.11m ist eine Sendeweite von 65.73m nötig.
+\item	Für bis zu 50 Module pro String und maximal 5 Strings soll das System ausgerichtet sein. Mit Modulen der Grösse 1.31m X 1.11m ist eine Sendeweite von 65.73m nötig.
 \item	Ein Gehäuse soll das  System umhüllen.
 \item Das Gerät soll die Masse 40cm/40cm/40cm nicht überschreiten.
 \item	Die Versorgung erfolgt ab Netz (230 V/ 50 Hz).
 \item	Das Gerät empfängt und vergleicht die gemeldeten Spannungen der einzelnen Module mit dem Mittelwert des zugehörigen Strings.
 \item	Aufgrund der Abweichung von der Durchschnittspannung eines Strings wird, nach der zweiten Warnung, für eine Fehlermeldung (über Relaiskontakt) entschieden.
 \item	Im Falle eines Defektes wird das fehlerhafte Modul ermittelt und angezeigt (LED). Weiter wird mit einem Display die Kennzeichnung der Sensorplatine des defekten Moduls angezeigt.
-
 \end{enumerate}
 
-\subsection{Wunschziele}
+\subsubsection{Wunschziele}
 \begin{enumerate}
 \item	Fehler- und Statusmeldungen können über SMS versendet werden.
 \item	Auch der Strom in jedem Modul wird gemessen und gemeldet.
 \item	Die Temperatur in jedem Modul wird gemessen und gemeldet.
+\end{enumerate}
+
+\subsection{Lieferobjekte}
+\begin{enumerate}
+\item	Statusberichte (Abzuliefern am 14. April, am 05. und 19. Mai und am 09. Juni als PDF, dem Auftraggeber, den Fachdozenten und der Kommunikationsdozentin)
+
+\item Funktionsfähige Sensorplatine zur Montage am PV-Modul (Abzuliefern am 16.06.16, als Original, dem Auftraggeber und den Fachdozenten)
+
+\item Software der Sensorplatine (Abzuliefern am 16.06.16, auf CD, den Fachdozenten)
+
+\item Funktionsfähiges Meldegerät (Abzuliefern am 16.06.16, als Original, dem Auftraggeber und den Fachdozenten)
+
+\item Software des Meldegerätes (Abzuliefern am 16.06.16, auf CD, den Fachdozenten)
+
+\item Fachbericht (Abzuliefern am 16.06.16, gedruckt und auf CD, der Kommunikationsdozentin und den Fachdozenten)
+	
 \end{enumerate}
 %\end{document}
