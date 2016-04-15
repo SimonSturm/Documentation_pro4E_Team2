@@ -14,5 +14,7 @@ Das Testkonzept soll die folgenden Funktionen überprüfen:
 	\item Erkennen von fehlerhaften Informationen, welche über die Powerline übertragen wurden (Kollison mehrerer gleichzeitiger Übertragungen)
 \end{itemize}
 
-Um dies sicherzustellen wird eine Solarzelle mittels eines Simulators emuliert und an den Sensor-Print angeschlossen. Es soll dann mit Referenzmessgeräten überprüft werden ob die Printinterne Spannungsmessung korrekt funktioniert und diese Informationen über die Powerline übertragen werden.
-%\end{document}
+Um dies sicherzustellen wird eine Solarzelle mittels eines Simulators emuliert und an den Sensor-Print angeschlossen. Es soll dann mit Referenzmessgeräten überprüft werden ob die Printinterne Spannungsmessung korrekt funktioniert und diese Informationen über die Powerline übertragen werden. 
+Um die Übertragung zu prüfen wird eine Powerline mittels einer an 5-60V angeschlossenen Leitung simuliert. Auf dem Kontroll-Print können die vom Mikrocontroller empfangenen Daten ausgelesen werden und mit den gesendeten verglichen werden. Simultan sollte am Display die übertragenen Werte zu sehen sein. 
+
+Um die Fehlererkennung zu testen wird am Mikrocontroller ein Sollwert simuliert und ermittelt ob das System entsprechend reagiert (Relaiskontakt wird geschlossen, Fehlermeldung am Display mit entsprechendem Modul, Fehlermeldung mittels LED am Gehäuse).
