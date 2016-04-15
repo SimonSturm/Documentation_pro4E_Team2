@@ -9,9 +9,8 @@
 Der Hardware Teil ist in zwei Bereiche unterteilt: Sensorplatine und Kontrollplatine. Die Sensorplatine hat die Aufgabe die Spannungswerte der Solarzelle zu messen und diese über die Powerline an den Kontrollprint zu übermitteln.
 Der Kontrollprint vergleicht diese Messwerte mit den Sollwerten einer funktionierenden Solarzelle und entscheidet dann, ob diese noch funtkionsfähig ist. Falls dem nicht so ist, wird ein Relaiskontakt geschlossen und es wird auf dem Display angezeigt, welches Panel defekt ist. 
 Die Kommunikation zwischen diesen beiden Platinen darf keine zusätzlichen Kabel benötigen, dies bedingt, dass die übermittelten Werte auf die Powerline moduliert werden müssen. Dieser Aufbau ist im Hardwarekonzept (Abbildung \ref{fig::Hardwarekonzept}) zu sehen.
-%Der Sensorprint wird über das Solarpanel gespiesen. Es ist deshalb darauf zu achten, das die Leistung nicht mehr als 100mW beträgt.
-
-%Die Kommunikation über die Powerline (PLC) wird mittels eines Powerline Transceivers/Receivers realisiert.
+Der Sensorprint wird über das Solarpanel gespiesen. Es ist deshalb darauf zu achten, das die Leistung nicht mehr als 100mW beträgt.
+Die Kommunikation über die Powerline (PLC) wird mittels eines Powerline Transceivers/Receivers realisiert.
 \begin{figure}[h]
 \centering
 \includegraphics[angle = -90, width=1.0\textwidth]{Hardware_Konzept.png}%
@@ -22,13 +21,13 @@ Die Kommunikation zwischen diesen beiden Platinen darf keine zusätzlichen Kabel
 \subsection{Sensorplatine}
 
 
-Die Sensorplatine wird auf der Rückseite des Solarpanels angebracht. Es wird vom Solarpanel selbst gespiesen, weshalb auf möglichst kleine Leistungen geachtet werden muss. Die momentanen Spannungswerte des Solarpanels werden über einen AD-Wandler eingelesen und mit einem Mikrocontroller für den Powerline Transceiver entsprechend kodiert. Die kodierten Spannungswerte werden dann mittels eines Powerline Transceivers auf die Powerline eingekoppelt und so auf die Kontrollplatine übertragen. Für die Identifikation des Solarpanels kann auf der Platine mittels DIL-Schaltern eine binäre ID eingestellt werden.
+Die Sensorplatine wird auf der Rückseite des Solarpanels angebracht. Es wird vom Solarpanel selbst gespiesen, weshalb auf möglichst kleine Leistungen geachtet werden muss. Die momentanen Spannungswerte des Solarpanels werden über einen AD-Wandler eingelesen und mit einem Mikrocontroller für den Powerline Transceiver entsprechend kodiert. Die kodierten Spannungswerte werden dann mittels eines Powerline Transceivers auf die Powerline eingekoppelt und so auf die Kontrollplatine übertragen. Für die Identifikation des Solarpanels kann auf der Platine mittels DIL-Schaltern eine binäre ID eingestellt werden. Als Verpolungsschutz wird eine Diode am Eingang eingesetzt, welche bei Verpolung den Sensorprint kurzschliest und die Hardware schützt.
 
 \newpage
 \subsubsection{Powerline Transceiver}
 
 Es wurde für einen Powerline Transceiver entschieden, da das Übertragungsprotokoll FSK (Frequency Shift Keying) schon gegeben ist und, aufgrund mangelnder Fachlicher Vorkenntnisse, in einem zu grossen zeitlichen Aufwand resultieren würde, diese Einkopplung in die Powerline selbst zu entwickeln. 
-Dieser Transceiver hat die Aufgabe die vom Mikrocontroller kodierten Spannungswerte auf die Powerline zu übertragen.
+Dieser Transceiver hat die Aufgabe die vom Mikrocontroller kodierten Spannungswerte auf die Powerline zu übertragen. Die vom Tranciever modulierten signale, werden Induktiv in die Powerline eingekoppelt.  Die Frequenz der Übertagung leigt in der Bandbreite zwischen 50 und 150 kHz. Die Übertragungsrate liegt im bereich zwischen 600 und 4800 Baud.
 
 \subsubsection{Spannungsmessung}
 
@@ -40,7 +39,7 @@ Der AD Wandler soll mindestens 10 Bit Auflösung haben und die Werte seriell aus
 
 \subsubsection{Mikrocontroller}
 
-Der Mikrocontroller verschlüsselt die eingelesenen Werte nach FSK und sendet diese an den Powerline Transceiver.
+Der Mikrocontroller codiert die eingelesenen Werte nach FSK und sendet diese an den Powerline Transceiver.
 
 \subsection{Kontrollplatine}
 
@@ -51,7 +50,7 @@ Die Speisung der Kontrollplatine erfolgt über das Netz. Die Netzspannung wird �
 Da mehrere Bauteile noch nicht definiert sind, kann die genaue DC Spannung noch nicht bestimmt werden. Die Speisung speist den Mikrocontroller, den Powerline transceiver und die Anzeigeelemente.
 
 \subsubsection{Powerline transceiver}
-Es wird der selbe Powerline transceiver wie bei der Sensorplatine verwendet. Dieser hat die Aufgabe die Modulierten Signale über die Powerline zu empfangen und diese dann zu demodulieren. Danach werden die verarbeiteten Signale an den Mikrocontroller übermittelt.
+Es wird der selbe Powerline transceiver wie bei der Sensorplatine verwendet. Dieser hat die Aufgabe die Modulierten Signale über die Powerline zu empfangen und diese dann zu demodulieren. Die Signale werden induktiv von der Powerline ausgekoppelt. Danach werden die verarbeiteten Signale an den Mikrocontroller übermittelt.
 
 \subsubsection{Microkontroller}
 Die Signale werden vom Mikrocontroller empfangen und abgespeichert. Wenn alle Signale abgespeichert sind, werden diese ausgewertet. Danach wird entschieden ob die einzelnen Panels funtionstüchtig oder defekt sind. Als Microkontroller wird der ATMega328 verwendet.
