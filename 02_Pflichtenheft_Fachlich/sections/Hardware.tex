@@ -7,7 +7,7 @@
 \section{Hardware}
 
 Der Hardware Teil ist in zwei Bereiche unterteilt: Sensorplatine und Kontrollplatine. Die Sensorplatine hat die Aufgabe die Spannungswerte der Solarzelle zu messen und diese über die Powerline an den Kontrollprint zu übermitteln.
-Der Kontrollprint vergleicht diese Messwerte mit den Sollwerten einer funktionierenden Solarzelle und entscheidet dann, ob diese noch funtkionsfähig ist. Falls dem nicht so ist, wird ein Relaiskontakt geschlossen und es wird auf dem Display angezeigt, welches Panel defekt ist. 
+Der Kontrollprint vergleicht diese Messwerte mit den Sollwerten (im Kapitel Software genauer erläutert) einer funktionierenden Solarzelle und entscheidet dann, ob diese noch funtkionsfähig ist. Falls dem nicht so ist, wird ein Relaiskontakt geschlossen und es wird auf dem Display angezeigt, welches Panel defekt ist. 
 Die Kommunikation zwischen diesen beiden Platinen darf keine zusätzlichen Kabel benötigen, dies bedingt, dass die übermittelten Werte auf die Powerline moduliert werden müssen. Dieser Aufbau ist im Hardwarekonzept (Abbildung \ref{fig::Hardwarekonzept}) zu sehen.
 Der Sensorprint wird über das Solarpanel gespiesen. Es ist deshalb darauf zu achten, das die Leistung nicht mehr als 100mW beträgt.
 Die Kommunikation über die Powerline (PLC) wird mittels eines Powerline Transceivers/Receivers realisiert.
