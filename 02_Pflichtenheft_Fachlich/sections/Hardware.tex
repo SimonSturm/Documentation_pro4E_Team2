@@ -35,7 +35,7 @@ Die Spanungsmessung erfolgt über eine OP-Schaltung, welche den Spannungsbereich
 
 \subsubsection{AD Wandler}
 
-Der AD Wandler soll mindestens 10 Bit Auflösung haben und die Werte seriell ausgeben können. Dieser empfängt die skalierten Spannungswerte und digitalisiert diese für den Mikrocontroller.
+Der AD Wandler soll mindestens 10 Bit Auflösung haben und die Werte seriell ausgeben können. Er empfängt die skalierten Spannungswerte und digitalisiert diese für den Mikrocontroller.
 
 \subsubsection{Mikrocontroller}
 
@@ -46,20 +46,20 @@ Der Mikrocontroller codiert die eingelesenen Werte nach FSK und sendet diese an 
 Die Kontrollplatine empfängt die modulierten Signale welche von der Sensorplatine über die Powerline übertragen werden. Diese Platine wird am Ende der Solaranlage in der Kontrollstation montiert. Dort kann der Anwender oder der Prüfer dieser Anlage herausfinden, ob defekte Solarpanels vorhanden sind.
 
 \subsubsection{Speisung}
-Die Speisung der Kontrollplatine erfolgt über das Netz. Die Netzspannung wird über ein Netzgerät auf eine definiert DC Spannung transformiert. 
-Da mehrere Bauteile noch nicht definiert sind, kann die genaue DC Spannung noch nicht bestimmt werden. Die Speisung speist den Mikrocontroller, den Powerline transceiver und die Anzeigeelemente.
+Die Speisung der Kontrollplatine erfolgt über das Netz. Die Netzspannung wird über ein Netzgerät auf eine definierte DC Spannung transformiert. 
+Da mehrere Bauteile noch nicht definiert sind, kann die genaue DC Spannung noch nicht bestimmt werden. Die Speisung speist den Mikrocontroller, den Powerline Transceiver und die Anzeigeelemente.
 
-\subsubsection{Powerline transceiver}
-Es wird der selbe Powerline transceiver wie bei der Sensorplatine verwendet. Dieser hat die Aufgabe die Modulierten Signale über die Powerline zu empfangen und diese dann zu demodulieren. Die Signale werden induktiv von der Powerline ausgekoppelt. Danach werden die verarbeiteten Signale an den Mikrocontroller übermittelt.
+\subsubsection{Powerline Transceiver}
+Es wird der selbe Powerline Transceiver wie bei der Sensorplatine verwendet. Dieser hat die Aufgabe die Modulierten Signale über die Powerline zu empfangen und diese dann zu demodulieren. Die Signale werden induktiv von der Powerline ausgekoppelt. Danach werden die verarbeiteten Signale an den Mikrocontroller übermittelt.
 
 \subsubsection{Microkontroller}
-Die Signale werden vom Mikrocontroller empfangen und abgespeichert. Wenn alle Signale abgespeichert sind, werden diese ausgewertet. Danach wird entschieden ob die einzelnen Panels funtionstüchtig oder defekt sind. Als Microkontroller wird der ATMega328 verwendet.
+Die Signale werden vom Mikrocontroller empfangen und abgespeichert. Wenn alle Signale abgespeichert sind, werden diese ausgewertet. Danach wird entschieden ob die einzelnen Panels funktionstüchtig oder defekt sind. Als Microkontroller wird der ATMega328 verwendet.
 
 \subsubsection{Anzeige Elemente}
-Als Anzeige Element wird ein Display verwendet. An diesem kann abgelesen werden, welche Panels defekt sind. Zudem sind 2 LEDs vorhanden(Grün: ok, Rot: defekt).
+Als Anzeige Element wird ein Display verwendet. An diesem kann abgelesen werden, welche Panels defekt sind. Zudem sind zwei LEDs vorhanden(Grün: ok, Rot: defekt).
 
 \subsubsection{Relais Kontakt}
-Die Sollspannung wird als den Mittelwert aller Panels definiert.
-Wenn die Sollspannung eines Panels nicht erreicht wird, steuert der Mikrocontroller einen Relaiskontakt an, an welchem externe Geräte galvanisch getrennt angeschlossen werden können.
+Die Sollspannung wird definiert als Mittelwert der Panel-Spannungen eines Strings.
+Wenn die Spannung eines Panels stark vom Mittelwert abweicht, steuert der Mikrocontroller, nach der zweiten Messung, einen Relaiskontakt an. An diesem können externe Geräte galvanisch getrennt angeschlossen werden.
 
 %\end{document}
