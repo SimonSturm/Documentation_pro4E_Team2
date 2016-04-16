@@ -21,13 +21,13 @@ Die Kommunikation über die Powerline (PLC) wird mittels eines Powerline Transce
 \subsection{Sensorplatine}
 
 
-Die Sensorplatine wird auf der Rückseite des Solarpanels angebracht. Es wird vom Solarpanel selbst gespiesen, weshalb auf möglichst kleine Leistungen geachtet werden muss. Die momentanen Spannungswerte des Solarpanels werden über einen AD-Wandler eingelesen und mit einem Mikrocontroller für den Powerline Transceiver entsprechend kodiert. Die kodierten Spannungswerte werden dann mittels eines Powerline Transceivers auf die Powerline eingekoppelt und so auf die Kontrollplatine übertragen. Für die Identifikation des Solarpanels kann auf der Platine mittels DIL-Schaltern eine binäre ID eingestellt werden. Als Verpolungsschutz wird eine Diode am Eingang eingesetzt, welche bei Verpolung den Sensorprint kurzschliest und die Hardware schützt.
+Die Sensorplatine wird auf der Rückseite des Solarpanels angebracht. Es wird vom Solarpanel selbst gespiesen, weshalb auf möglichst kleine Leistungen geachtet werden muss. Die momentanen Spannungswerte des Solarpanels werden über einen AD-Wandler eingelesen und mit einem Mikrocontroller für den Powerline Transceiver entsprechend kodiert. Die kodierten Spannungswerte werden dann mittels eines Powerline Transceivers auf die Powerline eingekoppelt und so auf die Kontrollplatine übertragen. Für die Identifikation des Solarpanels kann auf der Platine mittels DIL-Schaltern eine binäre ID eingestellt werden. Als Verpolungsschutz wird eine Diode am Eingang eingesetzt, welche bei Verpolung den Sensorprint kurzschliesst und so die Hardware schützt.
 
 \newpage
 \subsubsection{Powerline Transceiver}
 
 Es wurde für einen Powerline Transceiver entschieden, da das Übertragungsprotokoll FSK (Frequency Shift Keying) schon gegeben ist und, aufgrund mangelnder Fachlicher Vorkenntnisse, in einem zu grossen zeitlichen Aufwand resultieren würde, diese Einkopplung in die Powerline selbst zu entwickeln. 
-Dieser Transceiver hat die Aufgabe die vom Mikrocontroller kodierten Spannungswerte auf die Powerline zu übertragen. Die vom Tranciever modulierten signale, werden Induktiv in die Powerline eingekoppelt.  Die Frequenz der Übertagung leigt in der Bandbreite zwischen 50 und 150 kHz. Die Übertragungsrate liegt im bereich zwischen 600 und 4800 Baud.
+Dieser Transceiver hat die Aufgabe die vom Mikrocontroller kodierten Spannungswerte auf die Powerline zu übertragen. Die vom Tranciever modulierten Signale, werden induktiv in die Powerline eingekoppelt.  Die Frequenz der Übertagung liegt in der Bandbreite zwischen 50 und 150 kHz. Die Übertragungsrate liegt im Bereich von 600 bis 4800 Baud.
 
 \subsubsection{Spannungsmessung}
 
