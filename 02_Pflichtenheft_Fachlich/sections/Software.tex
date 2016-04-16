@@ -41,5 +41,5 @@ Die Situation ``Nacht'' wird mittels dem Vergleich des Mittelwerts mit dem minim
 
 \subsection{Mittelwertbildung}
 Die Mittelwertbildung beginnt bereits bei der Sensorplatine. Sie misst mehrmals in der Minute die Spannung, bildet einen gleitenden Mittelwert und speichert diesen. Die Sensorplatinen senden dann stündlich ihren Spannungs-Mittelwert an die Meldeplatine. Die Meldeplatine kontrolliert in einem Register, ob auch alle Sensorplatinen einen Spannungs-Mittelwert gesendet haben. Ist das Register nach einer Stunde komplett, rechnet die Meldeplatine über alle Messwerte den gesamten Mittelwert.\\
-Falls das Register nicht komplett ist, ist das ein möglicher Fehler, der aber verzögert ausgegeben wird und so die Sensorplatine Zeit hat ihren Messwert nochmals zu senden.
+Falls das Register nicht komplett ist, ist das ein möglicher Fehler, der aber verzögert ausgegeben wird damit die Sensorplatine Zeit hat ihren Messwert nochmals zu senden.
 %\end{document}
