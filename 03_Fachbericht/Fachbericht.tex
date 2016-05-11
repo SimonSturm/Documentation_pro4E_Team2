@@ -1,8 +1,11 @@
 \documentclass[a4paper]{fhnwreport} %Legt grundlegende Formatierungen wie 
 \graphicspath{{./graphics/}}%Change according to graphics folder!
 
-
 \begin{document}
-\include{Einleitung_ohne_titel}
-\include{Disposition}
+\input{./title/Title_TOC}
+\include{./sections/Einleitung}
+\include{./sections/Grundlagen}
+\include{./sections/Hardware}
+\include{./sections/Software}
+\include{./sections/Validierung}
 \end{document}
