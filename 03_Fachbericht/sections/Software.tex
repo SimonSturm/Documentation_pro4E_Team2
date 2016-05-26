@@ -20,8 +20,12 @@ wieso-was-wie-unter welchen Bedingungen
 Wie werden die Daten empfangen und wie werden sie gespeichert.
 wieso-was-wie-unter welchen Bedingungen
 \subsubsection{Fehlererkennung}
+Aus Zeitgründen konnte die Datenverarbeitung noch nicht programmiert werden. Der Plan ist aber die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings zu mitteln. Damit kann dann die Standardabweichung berechnet werden. Ist die Abweichung eines Wertes mehr als 20 Prozent über der Standardabweichung, wird diese Solarmodul vorgemerkt. Diese Prozedere wiederholt sich stündlich. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer so stark vom Mittelwert ab, wird eine Fehlermeldung losgeschickt.
+
 wieso-was-wie-unter welchen Bedingungen
 \subsubsection{Fehlermeldung (Display und Relais)}
+Die Fehlermeldung besteht aus der Fehlerankündigung selbst und der Identifikationsnummer der Sensorplatine, welche am defekten oder verschmutzten Modul befestigt ist. Die Fehlerankündigung ist als Text wie beispielsweise "Problem beim Modul..." auf dem Display zu sehen. Die Identifikationsnummer des Moduls wird von einer 8bit Binärzahl in eine Dezimalzahl umgewandelt und so angezeigt.
+
 wieso-was-wie-unter welchen Bedingungen
 \subsubsection{Benutzerinterface (Display und Drehgeber)}
 wieso-was-wie-unter welchen Bedingungen
