@@ -15,10 +15,9 @@ wieso-was-wie-unter welchen Bedingungen
 Der Meldeprint empfängt die Daten des Sensorprints mit Hilfe eines Receivers. Die Spannungswerte werden in Verbindung mit der Identifikationsnummer gespeichert und mit dem Sollwert vergleicht. Der Sollwert entspricht dem arithmetischen Mittelwert der Spannungen dieses einen Strings von Modulen. Bei einer Abweichung von *** Prozent, wird dasjenige Modul vorgemerkt. Falls nach einer weiteren Messung die Spannung des selben Moduls gleich vom Mittelwert abweicht, muss ein Fehler gemeldet werden. Die Identifikationsnummer wird auf dem Display angezeigt. Die in Standard C geschriebene Software bezieht sich auf den ATMEGA328P von Atmel. Das Hauptprogramm beinhaltet die Initialisierungen der Pins, des LCD Display, des Transceivers und des Drehgebers.Die einzelnen Bereiche werden unten genauer erläutert.
 \subsubsection{Aufbau und Abläufe (Flussdiagramm)}
 \subsubsection{Inbetriebnahme}
-Der Meldeprint
+Bei der Inbetriebnahme werden als erstes die Peripheriegeräte initialisiert. Darunter befinden sich der LC Display und der Receiver \todo{ist die uart kommunikation der receiver?}. Weiter muss die UART Kommunikation und der Timer Interrupt initialisiert werden. In der Endlosschlaufe des Hauptprogramms werden dann die ganzen Daten der Sensorplatine gespeichert und in einem Array Register gespeichert und weiterverarbeitet.
 \subsubsection{Receiver}
-Wie werden die Daten empfangen und wie werden sie gespeichert.
-wieso-was-wie-unter welchen Bedingungen
+Der Receiver detektiert über einen Ferrit-Kern über der DC-Leitung des Strings die Signale der Sensorplatine. Die Datenpakete werden mit der Identifikationsnummer an den Arduino weitergeleitet über die UART Kommunikation.
 \subsubsection{Fehlererkennung}
 wieso-was-wie-unter welchen Bedingungen
 \subsubsection{Fehlermeldung (Display und Relais)}
