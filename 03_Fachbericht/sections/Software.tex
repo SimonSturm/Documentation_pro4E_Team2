@@ -12,6 +12,7 @@ wieso-was-wie-unter welchen Bedingungen
 \subsubsection{Transceiveransteuerung}
 wieso-was-wie-unter welchen Bedingungen
 \subsection{Meldeprint}
+%HIER SCHREIBT CLAUDIUS
 Die Software des Meldeprints ist in drei Bereiche unterteilt. Beinahe die ganze Überwachung der Module kann in einem Bereich abgehandelt werden. Die anderen beiden dienen zum einen für die Anzeige und die Initialisierung und zum anderen für die Aktualisierung der eingehenden Daten.
 
 \begin{figure}[htbp] 
@@ -25,15 +26,16 @@ Wie die Bereiche der Software zusammenarbeiten ist in Abbildung \ref{fig:reportb
 \newline
 Der initialisierte Timer Interrupt ruft dann alle 15$u$s die Routine auf, die den Receiver nach Daten abfragt und die digitalen Eingänge entprellt und eine Flankendetektion durchführt.
 \newline
-\newline
 Die Endlosschlaufe ruft eine Routine auf, die jeweils eingegangene Daten, der gemessenen Spannung, mit der Identifikationsnummer der Sensorprints in ein Array speichert und mit dem Sollwert vergleicht. Der Sollwert entspricht dem arithmetischen Mittelwert der Spannungen dieses einen Strings von Modulen. Bei einer Abweichung von 20 Prozent, wird dasjenige Modul vorgemerkt. Falls nach einer weiteren Messung die Spannung des selben Moduls gleich vom Mittelwert abweicht, muss ein Fehler gemeldet werden. Die Identifikationsnummer wird auf dem Display angezeigt. Der ganze Prozess vom Start des Meldeprints bis zur Fehlermeldung werden hier weiter vertieft behandelt.
 \todo{ich würde nach der einleitung des meldeprints keine subsection machen für das flussdiagramm}
 
 \subsubsection{Aufbau und Abläufe (Flussdiagramm)}
 \subsubsection{Inbetriebnahme}
-Bei der Inbetriebnahme werden als erstes die Peripheriegeräte initialisiert. Darunter befinden sich der LCD Display und der Receiver \todo{ist die uart kommunikation der receiver?}. Weiter muss die UART Kommunikation und der Timer Interrupt initialisiert werden. In der Endlosschlaufe des Hauptprogramms werden dann die ganzen Daten der Sensorplatine gespeichert und in einem Array Register gespeichert und weiterverarbeitet.
+%HIER SCHREIBT CLAUDIUS
+Bei der Inbetriebnahme werden als erstes die Peripheriegeräte initialisiert. Darunter befinden sich der LCD Display und der Receiver. Weiter muss die UART Kommunikation und der Timer Interrupt initialisiert werden. In der Endlosschlaufe des Hauptprogramms werden dann die ganzen Daten der Sensorplatine gespeichert und in einem Array Register gespeichert und weiterverarbeitet.
 
 \subsubsection{Receiver}
+%HIER SCHREIBT CLAUDIUS
 Der Receiver detektiert über einen Ferrit-Kern über der DC-Leitung des Strings die Signale der Sensorplatine. Die Datenpakete werden mit der Identifikationsnummer an den Arduino weitergeleitet über die UART Kommunikation.
 
 \subsubsection{Fehlererkennung}
