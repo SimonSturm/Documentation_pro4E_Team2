@@ -1,4 +1,4 @@
-\section{Software}
+ \section{Software}
 Die Software bildet den wichtigsten Teil des Bindeglieds zwischen Benutzer und Hardware. Als erstes muss den Sensorplatinen eine Indentifikationsnummer zugeteilt und in der Zentrale die Anzahl Module angegeben werden. Die Gemessenen Spannungswerte der Solarmodule werden via Powerline an die Meldeplatine gesendet. Es sollen keine extra Datenkabel verwendet werden. Diese Daten müssen in der Meldezentrale verarbeitet werden. Eine allfällige Abweichung des Spannungswertes bei einem oder mehreren Modulen sollen erkannt und identifiziert werden. Worin genau diese Abweichung besteht, wird später erläutert. Nach der Identifikation muss ein solcher Fehler gemeldet werden. Die Kommunikation zwischen Hardware und Software basiert auf SPI. Das Endprodukt setzt aus dem Melde- und Sensor-Print zusammen. In dieser Unterteilung werden in den nächsten Kapiteln alle Softwarekomponenten beschrieben.
 \subsection{Sensorprint}
 Der Sensorprint übernimmt die Spannungsmessung und sendet diese mit der Identifikationsnummer via Powerline an den Meldeprint. Die Kopplung in die Powerline gelingt mit einem Transceiver. In den Folgenden Kapiteln wird die Software weiter unterteilt und jeder Bereich einzeln erläutert.
@@ -15,7 +15,7 @@ wieso-was-wie-unter welchen Bedingungen
 Der Meldeprint empfängt die Daten des Sensorprints mit Hilfe eines Receivers. Die Spannungswerte werden in Verbindung mit der Identifikationsnummer gespeichert und mit dem Sollwert vergleicht. Der Sollwert entspricht dem arithmetischen Mittelwert der Spannungen dieses einen Strings von Modulen. Bei einer Abweichung von *** Prozent, wird dasjenige Modul vorgemerkt. Falls nach einer weiteren Messung die Spannung des selben Moduls gleich vom Mittelwert abweicht, muss ein Fehler gemeldet werden. Die Identifikationsnummer wird auf dem Display angezeigt. Die in Standard C geschriebene Software bezieht sich auf den ATMEGA328P von Atmel. Das Hauptprogramm beinhaltet die Initialisierungen der Pins, des LCD Display, des Transceivers und des Drehgebers.Die einzelnen Bereiche werden unten genauer erläutert.
 \subsubsection{Aufbau und Abläufe (Flussdiagramm)}
 \subsubsection{Inbetriebnahme}
-wieso-was-wie-unter welchen Bedingungen
+Der Meldeprint
 \subsubsection{Receiver}
 Wie werden die Daten empfangen und wie werden sie gespeichert.
 wieso-was-wie-unter welchen Bedingungen
@@ -28,7 +28,4 @@ Die Fehlermeldung besteht aus der Fehlerankündigung selbst und der Identifikati
 
 wieso-was-wie-unter welchen Bedingungen
 \subsubsection{Benutzerinterface (Display und Drehgeber)}
-wieso-was-wie-unter welchen Bedingungen
-
-
-
+Das Menü und der Drehgeber bilden zusammen eine einfache Schnittstelle zwischen Mensch und Maschine. Das Menü ist in drei Ebenen unterteilt welche in Abbildung \todo{Abbildung Menü} dargestellt ist.
