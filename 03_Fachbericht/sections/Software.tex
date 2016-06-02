@@ -15,10 +15,13 @@ wieso-was-wie-unter welchen Bedingungen
 Der Meldeprint empfängt die Daten des Sensorprints mit Hilfe eines Receivers. Die Spannungswerte werden in Verbindung mit der Identifikationsnummer gespeichert und mit dem Sollwert vergleicht. Der Sollwert entspricht dem arithmetischen Mittelwert der Spannungen dieses einen Strings von Modulen. Bei einer Abweichung von *** Prozent, wird dasjenige Modul vorgemerkt. Falls nach einer weiteren Messung die Spannung des selben Moduls gleich vom Mittelwert abweicht, muss ein Fehler gemeldet werden. Die Identifikationsnummer wird auf dem Display angezeigt. Die in Standard C geschriebene Software bezieht sich auf den ATMEGA328P von Atmel. Das Hauptprogramm beinhaltet die Initialisierungen der Pins, des LCD Display, des Transceivers und des Drehgebers.Die einzelnen Bereiche werden unten genauer erläutert.
 \subsubsection{Aufbau und Abläufe (Flussdiagramm)}
 \subsubsection{Inbetriebnahme}
+
 Der Meldeprint
+=======
+Bei der Inbetriebnahme werden als erstes die Peripheriegeräte initialisiert. Darunter befinden sich der LC Display und der Receiver \todo{ist die uart kommunikation der receiver?}. Weiter muss die UART Kommunikation und der Timer Interrupt initialisiert werden. In der Endlosschlaufe des Hauptprogramms werden dann die Daten der Sensorplatine in einem Array Register gespeichert und weiterverarbeitet.
+
 \subsubsection{Receiver}
-Wie werden die Daten empfangen und wie werden sie gespeichert.
-wieso-was-wie-unter welchen Bedingungen
+Der Receiver detektiert über einen Ferrit-Kern über der DC-Leitung des Strings die Signale der Sensorplatine. Die Datenpakete werden mit der Identifikationsnummer an den Arduino weitergeleitet über die UART Kommunikation.
 \subsubsection{Fehlererkennung}
 Aus Zeitgründen konnte die Datenverarbeitung noch nicht programmiert werden. Der Plan ist aber die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings zu mitteln. Damit kann dann die Standardabweichung berechnet werden. Ist die Abweichung eines Wertes mehr als 20 Prozent über der Standardabweichung, wird diese Solarmodul vorgemerkt. Diese Prozedere wiederholt sich stündlich. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer so stark vom Mittelwert ab, wird eine Fehlermeldung losgeschickt.
 
@@ -28,4 +31,7 @@ Die Fehlermeldung besteht aus der Fehlerankündigung selbst und der Identifikati
 
 wieso-was-wie-unter welchen Bedingungen
 \subsubsection{Benutzerinterface (Display und Drehgeber)}
+
 Das Menü und der Drehgeber bilden zusammen eine einfache Schnittstelle zwischen Mensch und Maschine. Das Menü ist in drei Ebenen unterteilt welche in Abbildung \todo{Abbildung Menü} dargestellt ist.
+
+
