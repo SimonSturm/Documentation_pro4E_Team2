@@ -1,7 +1,5 @@
-\documentclass[a4paper]{fhnwreport} %Legt grundlegende Formatierungen wie 
-\graphicspath{{./graphics/}}%Change according to graphics folder!
-\usepackage[colorlinks=true]{hyperref}
-\hypersetup{hidelinks=true} %Hides the colour of the hyperlinks
+\documentclass[a4paper]{./fhnwreport/fhnwreport}
+\input{./preamble/packages}
 
 \begin{document}
 \input{./title/Title_TOC}
@@ -11,8 +9,10 @@
 \include{./sections/Software}
 \include{./sections/Validierung}
 \include{./sections/Schlusswort}
+\addcontentsline{toc}{section}{Literatur}
 \bibliography{./bibliography/Quellenverzeichnis_Fachbericht}
 \begin{appendix}
-%\include{./appendix/Anhang}
+\include{./appendix/Scheme_Statusboard}
+\include{./appendix/Layout_Statusboard}
 \end{appendix}
 \end{document}

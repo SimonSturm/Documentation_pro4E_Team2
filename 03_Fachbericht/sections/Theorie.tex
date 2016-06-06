@@ -5,12 +5,12 @@ Damit unser Überwachungssystem auch in bereits bestehenden Solaranlagen eingeba
 
 Damit keine zusätzlichen Kabel eingebaut werden müssen soll das Signal über die Powerline übertragen werden. Dafür wird das Signal moduliert und induktiv auf die Powerline eingekoppelt. Das zentrale Baustück dafür ist der ST7540, ein Powerline Transceiver der Signale auf die Powerline senden kann sowie auch Signale empfangen kann. Die verwendete Modulationsart ist FSK (Frequency-Shift-Keying), diese ist eine Frequenzmodulation welche das zu übertragende Signal auf ein Trägersignal moduliert, in dem es die Frequenz verändert, dies ist in der Grafik \ref{fig::fskDemo} ersichtlich.
 
-\begin{figure}[h]
+\begin{wrapfigure}{l}{0.5\textwidth}
 \centering
-\includegraphics[width=0.6\textwidth]{FSK_demo.png}%
+\includegraphics[width=0.5\textwidth]{FSK_demo.png}%
 \caption{Prinzip der FSK Modulation \cite{fskDemo_wiki} }
 \label{fig::fskDemo}
-\end{figure}
+\end{wrapfigure}
 
 Die Beschaltung des Transceivers besteht aus drei Filtern, welche an die Übertragungsfrequenz angepasst werden müssen: Tx Aktiv Filter, Tx und Rx Passiv Filter. Zur Dimensionierung dieser wurde der Application Guide \cite{Applic_Guide_ST7540} sowie das Datenblatt \cite{Datasheet_ST7540}. Es sind indgesamt 8 Übertragungsfrequenzen im Bereich von 60-132.5kHz vorprogrammiert. Der ST7540 kann über SPI oder UART angesteuert werden (UART/SPI Pin), der Clock wird mit einem Quartz generiert (16MHz). Der Transceiver kann zwischen ``sending'' oder ``receiving'' umschalten.
 Die Beschaltung des Transceivers besteht aus drei Filtern, welche an die Übertragungsfrequenz angepasst werden müssen: Tx Aktiv Filter, Tx und Rx Passiv Filter. Zur Dimensionierung dieser wurde der Application Guide \cite{Applic_Guide_ST7540} sowie das Datenblatt \cite{Datasheet_ST7540}. Es sind indgesamt 8 Übertragungsfrequenzen im Bereich von 60-132.5kHz vorprogrammiert sowie 4 Baudraten: 600, 1200, 2400, 4800. Der ST7540 kann über SPI oder UART angesteuert werden (UART/SPI Pin), der Clock wird mit einem Quartz generiert (16MHz). Der Transceiver kann zwischen ``sending'' oder ``receiving'' umschalten:
