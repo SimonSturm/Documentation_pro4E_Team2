@@ -13,15 +13,15 @@ Damit keine zusätzlichen Kabel eingebaut werden müssen soll das Signal über d
 \end{figure}
 
 Die Beschaltung des Transceivers besteht aus drei Filtern, welche an die Übertragungsfrequenz angepasst werden müssen: Tx Aktiv Filter, Tx und Rx Passiv Filter. Zur Dimensionierung dieser wurde der Application Guide \cite{Applic_Guide_ST7540} sowie das Datenblatt \cite{Datasheet_ST7540}. Es sind indgesamt 8 Übertragungsfrequenzen im Bereich von 60-132.5kHz vorprogrammiert. Der ST7540 kann über SPI oder UART angesteuert werden (UART/SPI Pin), der Clock wird mit einem Quartz generiert (16MHz). Der Transceiver kann zwischen ``sending'' oder ``receiving'' umschalten.
-Die Beschaltung des Transceivers besteht aus drei Filtern, welche an die Übertragungsfrequenz angepasst werden müssen: Tx Aktiv Filter, Tx und Rx Passiv Filter. Zur Dimensionierung dieser wurde der Application Guide \cite{Applic_Guide_ST7540} sowie das Datenblatt \cite{Datasheet_ST7540}. Es sind indgesamt 8 Übertragungsfrequenzen im Bereich von 60-132.5kHz vorprogrammiert sowie 4 Baudraten: 600, 1200, 2400, 4800. Der ST7540 kann über SPI oder UART angesteuert werden (UART/SPI Pin), der Clock wird mit einem Quartz generiert (16MHz). Der Transceiver kann zwischen ``sending'' oder ``receiving'' umschalten.
+Die Beschaltung des Transceivers besteht aus drei Filtern, welche an die Übertragungsfrequenz angepasst werden müssen: Tx Aktiv Filter, Tx und Rx Passiv Filter. Zur Dimensionierung dieser wurde der Application Guide \cite{Applic_Guide_ST7540} sowie das Datenblatt \cite{Datasheet_ST7540}. Es sind indgesamt 8 Übertragungsfrequenzen im Bereich von 60-132.5kHz vorprogrammiert sowie 4 Baudraten: 600, 1200, 2400, 4800. Der ST7540 kann über SPI oder UART angesteuert werden (UART/SPI Pin), der Clock wird mit einem Quartz generiert (16MHz). Der Transceiver kann zwischen ``sending'' oder ``receiving'' umschalten:
 
 \subsection{Receiving mode}
-Der ``receive'' Modus ist aktiv wenn RxTx = 1 und REG_DATA = 0. In diesem Modus liest der Powerline Transceiver die Informationen von der Powerline und überträgt diese an den Microkontroller. Der Powerline Transceiver verbraucht in diesem Modus einen sehr geringen Strom (ca.5mA).
+Der ``receive'' Modus ist aktiv wenn RxTx = 1 und REG\_DATA = 0. In diesem Modus liest der Powerline Transceiver die Informationen von der Powerline und überträgt diese an den Microkontroller. Der Powerline Transceiver verbraucht in diesem Modus einen sehr geringen Strom (ca.5mA).
 
 Da die Kommunikation zwischen Sensorprint und Meldeprint unidirektional ist, wird dieser Modus nur beim Meldegerät gebraucht.
 
 \subsection{Sending mode}
-Der ``sending'' Modus ist aktiv wenn RxTx = 1 und REG_DATA = 0. Die Daten werden entweder vom Control Register (SPI) oder direkt vom Tx Pin (UART) eingelesen. Die Daten werden dann moduliert und auf die Powerline gesendet. In diesem Modus hat der Powerline Transceiver einen hohen Leistungkonsum.
+Der ``sending'' Modus ist aktiv wenn RxTx = 1 und REG\_DATA = 0. Die Daten werden entweder vom Control Register (SPI) oder direkt vom Tx Pin (UART) eingelesen. Die Daten werden dann moduliert und auf die Powerline gesendet. In diesem Modus hat der Powerline Transceiver einen hohen Leistungkonsum.
 
 Dieser Modus wird nur auf den Sendeprints benutzt und werden mit UART angesteuert, weshalb auf das Control Register nicht zugegriffen wird. Das senden soll auch auf einem Minimum bleiben, da ein dauerhaftes Senden die Vorgabe von den durchschnittlichen 100mW nicht einhalten würde.
 
