@@ -29,11 +29,11 @@
 }
 
 @Electronic{fskDemo_wiki,
-  Title                    = {Binary FSK example},
-  Language                 = {Englisch},
-  Month                    = {März},
-  Note                     = {Zugriff am 06.06.2016},
-  Organization             = {Wikipedia},
+  Title                    = {{Binary FSK example}},
+  Language                 = {{Englisch}},
+  Month                    = {{März}},
+  Note                     = {{Zugriff am 06.06.2016}},
+  Organization             = {{Wikipedia}},
   Url                      = {https://upload.wikimedia.org/wikipedia/commons/3/39/Fsk.svg},
   Year                     = {2006},
 
