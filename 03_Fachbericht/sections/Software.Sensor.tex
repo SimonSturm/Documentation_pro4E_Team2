@@ -26,7 +26,7 @@ Als Basis für die Spannungsmessung soll zukünftig ein Referenzwert dienen. Der
 
 \subsubsection{Transceiveransteuerung}
 %wieso-was-wie-unter welchen Bedingungen
-Die Kommunikation zwischen dem Mikrocontroller funktioniert über UART. 
+Die Kommunikation zwischen dem Mikrocontroller und dem Tranceiver funktioniert über UART. 
 Der Mittelwert der Spannungsmessung soll an den Transceiver weitergegeben werden. Der Plan ist, dass neben dem Spannungswert die mit dem Schaltern eingestellte Identifikationsnummer und eine Checksumme übergeben wird. Die Prüfsumme soll mit dem zyklische Redundanzprüfung (Cyclic redundancy check = CRC)  erstellt werden. Die Prüfsumme ist sehr wichtig, da die Kommunikation über die Powerline unidirektional sein soll.
 
 
