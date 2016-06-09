@@ -15,9 +15,9 @@ Der Aufbau der Software auf der Sensorplatine basiert auf zwei verschiedenen Kom
 \label{DiagrammSP}
 \end{figure}
 
-In der vorhergehenden Abbildung \ref{DiagrammSP} ist der Zusammenhang der einzelnen Teilprogramme ersichtlich. Aus dem main() werden via der Endlosschlaufe die Unterprogramme aufgerufen. Die grünen Teile werden in Zukunft realisiert.
+In der vorhergehenden Abbildung \ref{DiagrammSP} ist der Zusammenhang der einzelnen Teilprogramme ersichtlich. Aus dem $main()$ werden via der Endlosschlaufe die Unterprogramme, $ADC$\_$receive()$,$uart$\_$getc()$und zukünftig ebenfalls $CRC()$ und $NameID()$ aufgerufen. Die grünen Teile werden in Zukunft realisiert.\\
 
-\subsubsection{Inbetriebnahme}
+\paragraph{Inbetriebnahme}\\
 Die Identifikationsnummer kann über das Einlesen der Dip-Schalter gespeichert bzw. definiert werden. Dies muss vom Benutzer eindeutig und selbständig eingestellt werden. Es ist wichtig, dass diese Identifikationsnummer eindeutig und einzigartig im gesamten String ist. Der Plan ist, dass man via USB dem Panel zusätzlich ein Name gibt, um die Identifikation der einzelnen Panel zu vereinfachen. 
 
 \subsubsection{Spannungsmessung}
