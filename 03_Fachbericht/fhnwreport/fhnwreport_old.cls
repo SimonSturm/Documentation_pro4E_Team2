@@ -30,7 +30,6 @@
 \usepackage[german]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[babel, german=quotes]{csquotes}
-\usepackage{hyperref}
 \usepackage{verbatim}
 \usepackage{amsmath}		%Mathe-Package
 \usepackage{amsthm}			%Mathe-Package
@@ -222,8 +221,7 @@
   {\SecFont\normalsize}}
 \renewcommand{\paragraph}[1]{\noindent\textbf{#1}}
 \def\@seccntformat#1{\csname the#1\endcsname\quad}
-\RequirePackage{hyperref,color}
-\hypersetup{bookmarksnumbered={true},colorlinks={true},linkcolor=black,citecolor=black}
+
 %%%%
 \RequirePackage{caption}
 \captionsetup{margin=10pt,font=small,labelfont=bf}

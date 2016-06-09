@@ -1,5 +1,5 @@
-\documentclass[a4paper]{fhnwreport} %Legt grundlegende Formatierungen wie 
-\graphicspath{{./graphics/}}%Change according to graphics folder!
+\documentclass[a4paper]{./fhnwreport/fhnwreport}
+\input{./preamble/packages}
 
 \begin{document}
 \input{./title/Title_TOC}
@@ -10,4 +10,10 @@
 \include{./sections/Software.Control}
 \include{./sections/Validierung}
 \include{./sections/Schlusswort}
+\addcontentsline{toc}{section}{Literatur}
+\bibliography{./bibliography/Quellenverzeichnis_Fachbericht}
+\begin{appendix}
+\include{./appendix/Scheme_Statusboard}
+\include{./appendix/Layout_Statusboard}
+\end{appendix}
 \end{document}

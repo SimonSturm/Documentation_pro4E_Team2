@@ -38,10 +38,24 @@ Abbildung..
 \subsubsection{Layout}
 
 \subsection{Meldeprint}
-Der Hardwareaufbau des Meldeprints wird in diesem Kapitel zuerst grob beschrieben, anschliessend wird die Schaltung weiter aufgeteilt und jeder Bereich einzeln erläutert.
+%Der Hardwareaufbau des Meldeprints wird in diesem Kapitel zuerst grob beschrieben, anschliessend wird die Schaltung weiter aufgeteilt und jeder Bereich einzeln erläutert.
+Der Meldeprint hat zur Aufgabe die von den einzelnen Panels übertragenen Informationen zu empfangen und diese Informationen auszuwerten. Er entscheidet ob ein Panel fehlerhaft ist und zeigt das fehlerhafte Panel auf einem Display an. Der Meldeprint ist grundlegend aufgeteilt in die folgenden SChaltungsteile: Speisung, Mikrocontroller, Powerline Transceiver/Receiver, Bedienung und Ausgabe.
+
 \subsubsection{Speisung}
+Als Speisung wird ein 230V AC Netzgerät genommen. Dieses wandelt die Spannung in 24V DC um. Diese wird mit zwei weiteren DC/DC Wandlern in 12V für die Speisung des Mikrocontrollers und des Powerline Transceivers respektive 5V für die Logik Schaltung.
+
 \subsubsection{Mikrocontroller}
+Es wurde ein Arduino UNO als Mikrocontroller eingesetzt. Dieser wurde gewählt da, wie schon auch beim Arduino Nano, Vorkenntnisse zu diesem vorhanden waren. Da der Platz beim Meldegerät keine massgebliche Rolle spielt wurd hier zugunsten des UNO's entschieden.
+
+Der Mikrocontroller regelt das empfangen der Informationen der einzelnen Solarpanels sowie das Auswerten von diesen inbegrifflich der Erkennung von Übertragugnsfehlern. Er hat die Aufgabe die empfangenen Daten in einer sinnvollen Struktur abzulegen und den Mittelwert sowie die Standardabweichung von den Spannungswerten bilden zu können. Eine Spannungsabweichung eines Solarpanels soll zu einer Fehlermeldung führen, welche anhand einer LED zu erkennen ist, sowie der Anzeige der ID des fehlerhaften Moduls am Display. Desweiteren wird ein Relaiskontakt geschlossen, an welchen man mittels herkömmlichen Laborbuchsen ein externes Gerät anschliessen kann.
+
+Der Mikrocontroller liest den Status des Inkrementalgebers ein, welcher für die Menüführung zuständig ist. Der Mikrocontroller kann mittels eines Reset Tasters in den Originalzustand zurückversetzt werden, welches alle momentane Messwerte löscht.
+
 \subsubsection{Receiver}
-\subsubsection{Layout}
+Als Powerline Transceiver/Receiver wurde wie schon beim Sensor-Print der ST7540 genommen. Die Beschaltung entspricht auch derjenigen vom Sensor-Print, als Design Grundlage für die Filterschaltung wurde der Application Guide \cite[p. 48]{Applic_Guide_ST7540} von STMicroelectrinics verwendet. Der Powerline Transceiver kommuniziert so mit 123.5kHz. Für die Grundbeschaltung wurde das Datenblatt des ST7540 \cite[p. 40]{Datasheet_ST7540} als Referenz genommen.
+
+%\subsubsection{Layout}
 \subsubsection{Bedienung und Ausgabe}
-\subsubsection{(Gehäuse)}
+Zur Bedienung des Gerätes dient ein Inkrementalgeber, mit welchem man sich durch das Menü des Displays navigieren kann. Die Ausgabe der Messwerte sowie der Fehlermeldungen geschieht auf dem Display. Bei einer Fehlermeldung leuchtet zusätzlich noch eine LED an der Front des Gehäuses und ein Relaiskontakt wird geschlossen. An diesen Kontakt kann mittels zwei Laborbuchsen ein externes Gerät angeschlossen werden.
+
+%\subsubsection{(Gehäuse)}
