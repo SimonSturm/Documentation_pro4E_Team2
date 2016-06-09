@@ -16,8 +16,10 @@ Der Aufbau der Software auf der Sensorplatine basiert auf zwei verschiedenen Kom
 \end{figure}
 
 In der vorhergehenden Abbildung \ref{DiagrammSP} ist der Zusammenhang der einzelnen Teilprogramme ersichtlich. Aus dem main() werden via der Endlosschlaufe die Unterprogramme aufgerufen. Die grünen Teile werden in Zukunft realisiert.
+
 \subsubsection{Inbetriebnahme}
-Die Identifikationsnummer kann über das Einlesen der Dip-Schalter gespeichert bzw. definiert werden. Dies muss vom Benutzer eindeutig und selbständig eingestellt werden. Es ist wichtig, dass diese Identifikationsnummer eindeutig und einzigartig im gesamten String ist. Der Plan ist, dass man via USB dem Panel zusätzlich ein Name gibt, um die Identifikation zu vereinfachen. 
+Die Identifikationsnummer kann über das Einlesen der Dip-Schalter gespeichert bzw. definiert werden. Dies muss vom Benutzer eindeutig und selbständig eingestellt werden. Es ist wichtig, dass diese Identifikationsnummer eindeutig und einzigartig im gesamten String ist. Der Plan ist, dass man via USB dem Panel zusätzlich ein Name gibt, um die Identifikation der einzelnen Panel zu vereinfachen. 
+
 \subsubsection{Spannungsmessung}
 %wieso-was-wie-unter welchen Bedingungen
 Die Kommunikation zwischen ADC und Mikrocontroller basiert auf dem Master-Salve-Prinzip. 
@@ -26,7 +28,8 @@ Als Basis für die Spannungsmessung soll zukünftig ein Referenzwert dienen. Der
 \subsubsection{Transceiver-Ansteuerung}
 %wieso-was-wie-unter welchen Bedingungen
 Die Kommunikation zwischen dem Mikrocontroller und dem Tranceiver funktioniert über UART. 
-Der Mittelwert der Spannungsmessung soll an den Transceiver weitergegeben werden. Der Plan ist, dass neben dem Spannungswert die mit dem Schaltern eingestellte Identifikationsnummer und eine Checksumme übergeben wird. Die Prüfsumme soll mit dem zyklische Redundanzprüfung (Cyclic redundancy check = CRC)  erstellt werden. Die Prüfsumme ist sehr wichtig, da die Kommunikation über die Powerline unidirektional sein soll und  mit Hilfe einer Prüfsumme Fehler, welche durch Kollisionen oder äussere Einflüsse entstehen, detektiert werden können.\\
+Der Mittelwert der Spannungsmessung soll an den Transceiver weitergegeben werden. Der Plan ist, dass neben dem Spannungswert die mit dem Schaltern eingestellte Identifikationsnummer und eine Checksumme übergeben wird. Die Prüfsumme soll mit dem zyklische Redundanzprüfung (Cyclic redundancy check = CRC)  erstellt werden. Die Prüfsumme ist sehr wichtig, da die Kommunikation über die Powerline unidirektional sein soll und  mit Hilfe einer Prüfsumme Fehler, welche durch Kollisionen oder äussere Einflüsse entstehen, detektiert werden können.
+
 \subsubsection{Kollisionsprävention}
 
 
