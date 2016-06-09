@@ -18,10 +18,14 @@ In der vorhergehenden Abbildung ist der Zusammenhang der einzelnen Teilprogramme
 Die Identifikationsnummer kann über das Einlesen der Schalter gespeichert bzw. definiert werden. Dies muss vom Benutzer eindeutig und selbständig eingestellt werden. Der Plan ist, dass man via USB dem Panel zusätzlich ein Name gegeben werden kann.
 \subsubsection{Spannungsmessung}
 %wieso-was-wie-unter welchen Bedingungen
-Die Kommunikation zwischen ADC und Mikrocontroller basiert auf dem Master-Salve-Prinzip. Der Plan ist, dass die empfangenen Werte vom ADC vom Mikrocontroller in einem bestimmten Zeitraum gespeichert gespeichert werden und der Mittelwert weiter an den Transceiver geleitet wird.\\
-Als Basis für die Spannungsmessung soll zukünftig ein Referenzwert dienen. Der empfangene Wert soll durch Berechnung der Abweichung zu diesem Referenzwert dem Spannnungswert zugeteilt werden. Schlussendlich soll der durchschnittliche Spannungswert weiter an den Transceiver geleitet werden.
+Die Kommunikation zwischen ADC und Mikrocontroller basiert auf dem Master-Salve-Prinzip. 
+Als Basis für die Spannungsmessung soll zukünftig ein Referenzwert dienen. Der empfangene Wert soll durch Berechnung der Abweichung zu diesem Referenzwert dem Spannnungswert zugeteilt werden. Der Plan ist, dass die empfangenen Werte vom ADC vom Mikrocontroller in einem bestimmten Zeitraum gespeichert gespeichert werden und der Mittelwert weiter an den Transceiver geleitet wird.
+
 \subsubsection{Transceiveransteuerung}
 %wieso-was-wie-unter welchen Bedingungen
+Die Kommunikation zwischen dem Mikrocontroller funktioniert über UART. 
+Der Mittelwert der Spannungsmessung soll an den Transceiver weitergegeben werden. Der Plan ist, dass neben dem Spannungswert die mit dem Schaltern eingestellte Identifikationsnummer und eine Checksumme übergeben wird. Die Prüfsumme soll mit dem zyklische Redundanzprüfung (Cyclic redundancy check = CRC)  erstellt werden. Die Prüfsumme ist sehr wichtig, da die Kommunikation über die Powerline unidirektional sein soll.
+
 
 
 
