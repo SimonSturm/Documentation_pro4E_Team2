@@ -24,7 +24,7 @@ Die Identifikationsnummer kann über das Einlesen der Schalter gespeichert bzw. 
 Die Kommunikation zwischen ADC und Mikrocontroller basiert auf dem Master-Salve-Prinzip. 
 Als Basis für die Spannungsmessung soll zukünftig ein Referenzwert dienen. Der empfangene Wert soll durch Berechnung der Abweichung zu diesem Referenzwert dem Spannnungswert zugeteilt werden. Der Plan ist, dass die empfangenen Werte vom ADC vom Mikrocontroller in einem bestimmten Zeitraum gespeichert gespeichert werden und der Mittelwert weiter an den Transceiver geleitet wird.
 
-\subsubsection{Transceiveransteuerung}
+\subsubsection{Transceiver-Ansteuerung}
 %wieso-was-wie-unter welchen Bedingungen
 Die Kommunikation zwischen dem Mikrocontroller und dem Tranceiver funktioniert über UART. 
 Der Mittelwert der Spannungsmessung soll an den Transceiver weitergegeben werden. Der Plan ist, dass neben dem Spannungswert die mit dem Schaltern eingestellte Identifikationsnummer und eine Checksumme übergeben wird. Die Prüfsumme soll mit dem zyklische Redundanzprüfung (Cyclic redundancy check = CRC)  erstellt werden. Die Prüfsumme ist sehr wichtig, da die Kommunikation über die Powerline unidirektional sein soll und  mit Hilfe einer Prüfsumme Fehler, welche durch Kollisionen oder äussere Einflüsse entstehen, detektiert werden können.\\
