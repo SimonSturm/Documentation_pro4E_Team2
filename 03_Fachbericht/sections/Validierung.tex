@@ -1,9 +1,18 @@
 \section{Validierung}
-In den nachfolgenden Kapiteln findet sich eine Zusammenfassung aller wichtigen Erkenntnisse sowie eine Zusammenstellung der erzielten Messergebnisse. 
+In den folgenden Kapiteln werden die Validierungen der Spannungsmessung und die Konzepte für die Datenübertragung via Powerline, Fehlererkennung eines Moduls und der Kollisionserkennung.
 \subsection{Spannungsmessung}
-Als Indiz für eine defekte oder verdunkelte Solarzelle wird die Zellenspannung gemessen, daher ist bei dieser die Messgenauigkeit sehr wichtig und wurde vom uftraggeber auf $\pm$0.1V festgelegt. Um dies zu überprüfen wird die angelegte Spannung mit einem weiteren Messgerät aufgezeichnet und mit dem ermittelten Wert verglichen. Die berechnete Abweichung beträgt $\pm$??V, daher sollte die tatsächliche Messungenauigkeit zwischen $\pm$??V und $\pm$0.1V liegen. In diesem Kapitel werden die Ergebnisse der Genauigkeitsmessung aufgeführt.
+Als Indiz für eine defekte oder verdunkelte Solarzelle wird die Zellenspannung gemessen, daher ist bei dieser die Messgenauigkeit sehr wichtig und wurde vom Auftraggeber auf $\pm$0.1V festgelegt. Um dies zu überprüfen, wird die angelegte Spannung mit einem weiteren Messgerät aufgezeichnet und mit dem ermittelten Wert verglichen. Die berechnete Abweichung beträgt $\pm$??V, daher sollte die tatsächliche Messungenauigkeit zwischen $\pm$??V und $\pm$0.1V liegen. In diesem Kapitel werden die Ergebnisse der Genauigkeitsmessung aufgeführt.
 \subsection{Datenübertragung via Powerline}
-Das Ziel dieser Messung ist es, eine vorher definierte Anzahl Bits via Powerline zu übertragen. Dafür werden an einem spannungsführenden Kabel zwei Ferritkerne, mit einem gewissen Abstand dazwischen, angebracht und über eine Spule mit dem jeweiligen Transceiver verbunden. Das vom ersten Transceiver gesendete Bitmuster sollte beim zweiten Transceiver empfangen werden und das selbe Bitmuster wird wieder ausgeben. Die Ergebnisse dieser Messung werden im folgenden Kapitel erläutert.
+Das Ziel dieser Messung ist es, eine vorher definierte Anzahl Bits via Powerline zu übertragen. Dafür werden an einem spannungsführenden Kabel zwei Ferritkerne, mit verschiedenen Abständen dazwischen, angebracht und über eine Spule mit dem jeweiligen Transceiver verbunden. Das vom ersten Transceiver gesendete Bitmuster sollte beim zweiten Transceiver empfangen werden und das selbe Bitmuster wird wieder ausgeben.
+Die Abstände werden wie folgt verändert und das Empfangen von Bitmuster überprüft:
+\begin{enumerate}
+\item[•]1 m
+\item[•]10 m
+\item[•]25 m
+\item[•]50 m
+\item[•]100 m
+\end{enumerate}
+Dieses Testkonzept gewährleistet eine ganzheitliche Überprüfung des Empfanges, sowohl bei kleinen als grossen Solaranlagen.
 \subsection{Fehlererkennung eines Moduls}
 Damit eine einfache Lokalisierung des defekten Moduls sichergestellt ist, hat jeder Sensorprint eine eigene Erkennungsnummer. Um sicher zu stellen, dass diese Erkennungsnummer korrekt übertragen und verarbeitet wird, ist ein einfaches Testkonzept vorgesehen. Das Sensorboard wird auf eine gewisse Erkennungsnummer eingestellt und der Meldeprint kalibriert. Anschliessend wird die Nummer geändert was zur Folge hat, dass der Meldeprint einen Fehler ausgibt und diesen auf dem LCD-Display mit der dazugehörigen Erkennungsnummer anzeigt. Im folgendem Kapitel sind die Ergebnisse dieses Tests aufgeführt.
 \subsection{Kollisionserkennung}

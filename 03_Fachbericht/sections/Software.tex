@@ -1,15 +1,7 @@
 \section{Software}
-<<<<<<< HEAD
-Die Software bildet den wichtigsten Teil des Bindeglieds zwischen Benutzer und Hardware. Als erstes muss den Sensorplatinen eine Indentifikationsnummer zugeteilt und in der Zentrale die Anzahl Module angegeben werden. Die Gemessenen Spannungswerte der Solarmodule werden via Powerline an die Meldeplatine gesendet. Es sollen keine extra Datenkabel verwendet werden. Diese Daten müssen in der Meldezentrale verarbeitet werden. Eine allfällige Abweichung des Spannungswertes bei einem oder mehreren Modulen sollen erkannt und identifiziert werden. Worin genau diese Abweichung besteht, wird später erläutert. Nach der Identifikation muss ein solcher Fehler gemeldet werden. Die Kommunikation zwischen Hardware und Software basiert auf SPI. Das Endprodukt setzt aus dem Melde- und Sensor-Print zusammen. In dieser Unterteilung werden in den nächsten Kapiteln alle Softwarekomponenten beschrieben.
-=======
-Die Software gliedert sich in einen Teil für den Sensorprint auf dem Modul und einen Teil für den Meldeprint beim Gleichrichter. Der Teil für den Sensorprint muss unabhängig und wartungsfrei ablaufen können, wohingegen der Teil des Meldeprints in Interaktion mit dem Benutzer steht. Der Meldeprint bildet den wichtigsten Teil des Bindeglieds zwischen Benutzer und Hardware. Damit er die einzelnen Module identifizieren kann wird bei der Installation dem Sensorprints eine Identifikationsnummer gegeben. Zudem muss der Benutzer im Interface des Meldeprints die Anzahl Module angeben. Die Gemessenen Spannungswerte der Module werden via Powerline an den Meldeprint gesendet. Es sollen keine extra Datenkabel verwendet werden. Diese Daten müssen in der Meldezentrale auf dem Meldeprint verarbeitet werden. Eine allfällige Abweichung des Spannungswertes bei einem oder mehreren Modulen sollen erkannt und identifiziert werden. Worin genau diese Abweichung besteht, wird später erläutert. Nach der Identifikation muss ein solcher Fehler gemeldet werden. Die Kommunikation zwischen Hardware und Software basiert auf SPI. Das Endprodukt setzt sich aus Melde- und Sensorprint zusammen. In dieser Unterteilung werden in den nächsten Kapiteln alle Softwarekomponenten beschrieben.
+Die Software gliedert sich in einen Teil für den Sensorprint auf dem Modul und einen Teil für den Meldeprint beim Gleichrichter. Der Teil für den Sensorprint muss unabhängig und wartungsfrei ablaufen, wohingegen der Teil des Meldeprints in Interaktion mit dem Benutzer steht. Der Meldeprint bildet den wichtigsten Teil des Bindeglieds zwischen Benutzer und Hardware. Damit er die einzelnen Module identifizieren kann, wird bei der Installation dem Sensorprints eine Identifikationsnummer gegeben. Zudem muss der Benutzer im Interface des Meldeprints die Anzahl Module angeben. Die gemessenen Spannungswerte der Module werden via Powerline an den Meldeprint gesendet. Es sollen keine extra Datenkabel verwendet werden. Diese Daten müssen in der Meldezentrale auf dem Meldeprint verarbeitet werden. Eine allfällige Abweichung des Spannungswertes bei einem oder mehreren Modulen sollen erkannt und identifiziert werden. Worin genau diese Abweichung besteht, wird später erläutert. Nach der Identifikation muss ein solcher Fehler gemeldet werden. Die Kommunikation zwischen Hardware und Software basiert auf SPI. Das Endprodukt setzt sich aus Melde- und Sensorprint zusammen. In dieser Unterteilung werden in den nächsten Kapiteln alle Softwarekomponenten beschrieben.
 
 
-
-
-
-
->>>>>>> 1329e0e9642cd730ce58301dda0369b00c384f60
 \subsection{Sensorprint}
 Der Sensorprint übernimmt die Spannungsmessung und sendet diese mit der Identifikationsnummer via Powerline an den Meldeprint. Die Kopplung in die Powerline gelingt mit einem Ferritkern. In den folgenden Kapiteln wird die Software weiter unterteilt und jeder Bereich einzeln erläutert.
 \subsubsection{Aufbau und Abläufe}
@@ -29,70 +21,6 @@ Als Basis für die Spannungsmessung soll zukünftig ein Referenzwert dienen. Der
 \subsubsection{Transceiveransteuerung}
 %wieso-was-wie-unter welchen Bedingungen
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \newpage
 \subsection{Meldeprint}
-<<<<<<< HEAD
-Der Meldeprint empfängt die Daten des Sensorprints mit Hilfe eines Receivers. Die Spannungswerte werden in Verbindung mit der Identifikationsnummer gespeichert und mit dem Sollwert vergleicht. Der Sollwert entspricht dem arithmetischen Mittelwert der Spannungen dieses einen Strings von Modulen. Bei einer Abweichung von mehr als 20 Prozent von der Standardabweichung, wird dasjenige Modul vorgemerkt. Falls nach einer weiteren Messung die Spannung des selben Moduls gleich vom Mittelwert abweicht, muss ein Fehler gemeldet werden. Die Identifikationsnummer wird auf dem Display angezeigt. Die in Standard C geschriebene Software bezieht sich auf den ATMEGA328P von Atmel. Das Hauptprogramm beinhaltet die Initialisierungen der Pins, des LCD Display, des Transceivers und des Drehgebers.Die einzelnen Bereiche werden unten genauer erläutert.
-\subsubsection{Aufbau und Abläufe (Flussdiagramm)}
-\subsubsection{Inbetriebnahme}
-
-Der Meldeprint
-
-Bei der Inbetriebnahme werden als erstes die Peripheriegeräte initialisiert. Darunter befinden sich der LC Display und der Receiver \todo{ist die uart kommunikation der receiver?}. Weiter muss die UART Kommunikation und der Timer Interrupt initialisiert werden. In der Endlosschlaufe des Hauptprogramms werden dann die Daten der Sensorplatine in einem Array Register gespeichert und weiterverarbeitet.
-
-\subsubsection{Receiver}
-Der Receiver detektiert über einen Ferrit-Kern über der DC-Leitung des Strings die Signale der Sensorplatine. Die Datenpakete werden mit der Identifikationsnummer an den Arduino weitergeleitet über die UART Kommunikation.
-=======
-%HIER SCHREIBT CLAUDIUS
-Die Software des Meldeprints ist in drei Bereiche unterteilt. Beinahe die ganze Überwachung der Module kann in einem Bereich abgehandelt werden. Die anderen beiden dienen zum einen für die Anzeige und die Initialisierung und zum anderen für die Aktualisierung der eingehenden Daten.
-
-\begin{figure}[htbp] 
-  \centering
-     \includegraphics[width=1\textwidth]{graphics/reportboard-software-river}
-  \caption{Visualisierung Softwarekonzept}
-  \label{fig:reportboard-software-river}
-\end{figure}
-
-Wie die Bereiche der Software zusammenarbeiten ist in Abbildung \ref{fig:reportboard-software-river} gut ersichtlich. In der Initialisierung werden als erstes die Hardwarekomponenten und Interrupts initialisiert, dann wird die Endlosschlaufe im Hauptprogramm aufgerufen.\\
-Der Timer Interrupt ruft dann alle 15$\mu$s die Routine auf, die digitale Eingänge entprellt und eine Flankendetektion durchführt. Eingehende und an das Hauptprogramm übermittelte Daten vom Receiver lösen einen Interrupt aus, der die Datenpakete weiterverarbeitet.\\
-Die Endlosschlaufe ruft eine Routine auf, die jeweils eingegangene Daten, der gemessenen Spannung, mit der Identifikationsnummer des Sensorprints in ein Array speichert und mit dem Sollwert vergleicht. Der Sollwert entspricht dem arithmetischen Mittelwert der Spannungen dieses einen Strings von Modulen. Bei einer Abweichung von 20 Prozent\todo{sind diese 20 Prozent endgültig?}, wird dasjenige Modul vorgemerkt. Falls nach einer weiteren Messung die Spannung des selben Moduls gleich vom Mittelwert abweicht, muss ein Fehler gemeldet werden. Die Identifikationsnummer wird auf dem Display angezeigt. Der ganze Prozess vom Start des Meldeprints bis zur Fehlermeldung werden hier weiter vertieft behandelt. Dabei ist anzumerken, dass die ganzen hier beschriebenen Prozesse nicht abschliessend programmiert und getestet werden konnten. Es lag wohl an der zu grossen Wissenslücke im Standard C Programmieren.
-\todo{ich würde nach der einleitung des meldeprints keine subsection machen für das flussdiagramm}
-
-\subsubsection{Aufbau und Abläufe (Flussdiagramm)}
-\subsubsection{Inbetriebnahme}
-%HIER SCHREIBT CLAUDIUS
-Wird die Hardware mit Energie versorgt, startet die Software des Meldeprints und initialisiert als erstes die Peripheriegeräte. Darunter befinden sich der LCD Display und der Receiver. Weiter muss die UART Kommunikation, der normale und der Timer Interrupt initialisiert werden. Ist dieser Vorgang abgeschlossen ruft die Endlosschlaufe im Hauptprogramm die berechnende Routine auf für die Fehlererkennung des Sensorprints. Der Meldeprint ist nun betriebsbereit und reagiert sobald eine Eingabe vom Benutzer getätigt wird oder der Interrupt ein eingehendes Datenpaket registriert.
-
-\subsubsection{Receiver}
-%HIER SCHREIBT CLAUDIUS
-Der Receiver detektiert über einen Ferrit-Kern über der DC-Leitung des Strings die Signale des Sensorprints. Die Datenpakete werden mit der Identifikationsnummer zuerst über die UART Kommunikation an den Arduino weitergeleitet.\\
-Die Kommunikation über die DC-Leitung zwischen Sensorprint und Meldeprint ist Unidirektional. Ist der Meldeprint eingeschaltet und die Initialisierung des Receivers abgeschlossen, können laufend vom Sensorprint gesendete Datenpakete empfangen werden. Der im Hauptprogramm zuvor initialisierte Interrupt registriert die empfangenen Daten vom Receiver und verarbeitet diese weiter.
-
->>>>>>> e0c6bb29cde619360ee4422dabc95f11166ec7fa
-\subsubsection{Fehlererkennung}
-Die Fehlererkennung spielt eine wichtige Rolle im gesamten Überwachungssystem von Sensor- und Meldeprint. Es gab mehrere diskutierte Varianten, wie nun ein Fehler eines einzelnen Moduls gefunden und lokalisiert werden konnte. Als klarste und beste Variante diente sich das arithmetische Mittel mit einer Identifikationsnummer an. Die Variante will die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings mitteln. Damit kann dann die Standardabweichung berechnet werden.\todo{Haben wir eine Rechnung für Standardabweichung} Ist die Abweichung eines Wertes mehr als 20 Prozent über der Standardabweichung, wird diese Solarmodul vorgemerkt. Dieser Prozess \todo{einfügen von Fehlererkennungs-prozess} wiederholt sich stündlich. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer stark vom Mittelwert ab, wird eine Fehlermeldung ausgegeben. Eine dem fehlerbehafteten Mittelwert hinterlegte Identifikationsnummer erlaubt es das Modul exakt zu nennen und es im überwachten String zu finden.
-
-\subsubsection{Fehlermeldung (Display und Relais)}
-Die Fehlermeldung besteht aus der Fehlerankündigung selbst und der Identifikationsnummer der Sensorplatine, welche am defekten oder verschmutzten Modul befestigt ist. Die Fehlerankündigung ist als Text wie beispielsweise "Problem beim Modul..." auf dem Display zu sehen. Die Identifikationsnummer des Moduls wird von einer 8bit Binärzahl in eine Dezimalzahl umgewandelt und so angezeigt.
-
-wieso-was-wie-unter welchen Bedingungen
-\subsubsection{Benutzerinterface (Display und Drehgeber)}
-
-Das Menü und der Drehgeber bilden zusammen eine einfache Schnittstelle zwischen Mensch und Maschine. Das Menü ist in drei Ebenen unterteilt welche in Abbildung \todo{Abbildung Menü} dargestellt ist.
-
-
+% Hier kommt Software.Control.tex hinein
