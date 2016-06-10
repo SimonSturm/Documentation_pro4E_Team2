@@ -20,7 +20,18 @@ Der Receiver detektiert über einen Ferrit-Kern über der DC-Leitung des Strings
 Die Kommunikation über die DC-Leitung zwischen Sensorprint und Meldeprint ist Unidirektional. Ist der Meldeprint eingeschaltet und die Initialisierung des Receivers abgeschlossen, können laufend vom Sensorprint gesendete Datenpakete empfangen werden. Der im Hauptprogramm zuvor initialisierte Interrupt registriert die empfangenen Daten vom Receiver und verarbeitet diese weiter.
 
 \subsubsection{Fehlererkennung}
-Die Fehlererkennung spielt eine wichtige Rolle im gesamten Überwachungssystem von Sensor- und Meldeprint. Es gab mehrere diskutierte Varianten, wie nun ein Fehler eines einzelnen Moduls gefunden und lokalisiert werden konnte. Als übersichtlichste und beste Variante diente sich das arithmetische Mittel mit einer Identifikationsnummer an. Die Variante will die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings mitteln. Damit kann die Standardabweichung berechnet werden.\todo{Haben wir eine Rechnung für Standardabweichung} Ist die Abweichung eines Wertes mehr als 20 Prozent über der Standardabweichung, wird dieses Solarmodul vorgemerkt. Dieser Prozess \todo{einfügen von Fehlererkennungs-prozess} wiederholt sich stündlich. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer stark vom Mittelwert ab, wird eine Fehlermeldung ausgegeben. Eine dem fehlerbehafteten Mittelwert hinterlegte Identifikationsnummer erlaubt es das Modul exakt zu nennen und es im überwachten String zu finden.
+Die Fehlererkennung spielt eine wichtige Rolle im gesamten Überwachungssystem von Sensor- und Meldeprint. Es gab mehrere diskutierte Varianten, wie nun ein Fehler eines einzelnen Moduls gefunden und lokalisiert werden konnte. Als übersichtlichste und beste Variante diente sich das arithmetische Mittel mit einer Identifikationsnummer an.
+
+\begin{figure}[htbp] 
+  \centering
+     \includegraphics[width=1\textwidth]{graphics/error-warning-scheme}
+  \caption{Prozess zur Fehlererkennung}
+  \label{fig:error-warning-scheme}
+\end{figure}
+
+Die Variante will die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings mitteln. Damit kann die Standardabweichung berechnet werden.\todo{Haben wir eine Rechnung für Standardabweichung} Ist die Abweichung eines Wertes mehr als 20 Prozent über der Standardabweichung, wird dieses Solarmodul vorgemerkt. Dieser Prozess wiederholt sich stündlich und ist in Abbildung \ref{fig:error-warning-scheme} sichtbar. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer stark vom Mittelwert ab, wird eine Fehlermeldung ausgegeben. Eine dem fehlerbehafteten Mittelwert hinterlegte Identifikationsnummer erlaubt es das Modul exakt zu nennen und es im überwachten String zu finden.
+
+%error-warning-scheme
 
 \subsubsection{Fehlermeldung (Display und Relais)}
 Die Fehlermeldung besteht aus der Fehlerankündigung selbst und der Identifikationsnummer der Sensorplatine, welche am überwachten Modul befestigt ist. Die Fehlerankündigung ist als Text wie beispielsweise "Problem bei Modul..." auf dem Display zu sehen. Die Identifikationsnummer des Moduls wird von einer 8bit Binärzahl in eine Dezimalzahl umgewandelt und so angezeigt.
