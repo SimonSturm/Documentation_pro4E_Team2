@@ -29,9 +29,14 @@ Die Fehlererkennung spielt eine wichtige Rolle im gesamten Überwachungssystem v
   \label{fig:error-warning-scheme}
 \end{figure}
 
-Die Variante will die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings mitteln. Damit kann die Standardabweichung berechnet werden.\todo{Haben wir eine Rechnung für Standardabweichung} Ist die Abweichung eines Wertes mehr als 20 Prozent über der Standardabweichung, wird dieses Solarmodul vorgemerkt. Dieser Prozess wiederholt sich stündlich und ist in Abbildung \ref{fig:error-warning-scheme} sichtbar. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer stark vom Mittelwert ab, wird eine Fehlermeldung ausgegeben. Eine dem fehlerbehafteten Mittelwert hinterlegte Identifikationsnummer erlaubt es das Modul exakt zu nennen und es im überwachten String zu finden.
+\begin{figure}[htbp] 
+  \centering
+     \includegraphics[width=1\textwidth]{graphics/failurecalc-diagram}
+  \caption{Spannung-Zeit-Diagramm: Alle übermittelten Modulspannungen innerhalb einer Stunde}
+  \label{fig:failurecalc-diagram}
+\end{figure}
 
-%error-warning-scheme
+Die Variante will die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings mitteln. Damit kann die Standardabweichung berechnet werden.\todo{Haben wir eine Rechnung für Standardabweichung} Ist die Abweichung eines Wertes mehr als 20 Prozent über der Standardabweichung, wird dieses Solarmodul vorgemerkt. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer stark vom Mittelwert ab, wird eine Fehlermeldung ausgegeben. Eine dem fehlerbehafteten Mittelwert hinterlegte Identifikationsnummer erlaubt es das Modul exakt zu nennen und es im überwachten String zu finden. Dieser Prozess wiederholt sich stündlich und ist in Abbildung \ref{fig:error-warning-scheme} sichtbar, weiter zeigt die Abbildung \ref{fig:failurecalc-diagram} die übermittelten Modulspannungen und solche, die eine zu grosse Toleranz haben und deshalb vorgemerkt werden.
 
 \subsubsection{Fehlermeldung (Display und Relais)}
 Die Fehlermeldung besteht aus der Fehlerankündigung selbst und der Identifikationsnummer der Sensorplatine, welche am überwachten Modul befestigt ist. Die Fehlerankündigung ist als Text wie beispielsweise "Problem bei Modul..." auf dem Display zu sehen. Die Identifikationsnummer des Moduls wird von einer 8bit Binärzahl in eine Dezimalzahl umgewandelt und so angezeigt.
