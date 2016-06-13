@@ -1,6 +1,12 @@
 \subsection{Meldeprint}
 %Der Hardwareaufbau des Meldeprints wird in diesem Kapitel zuerst grob beschrieben, anschliessend wird die Schaltung weiter aufgeteilt und jeder Bereich einzeln erläutert.
-Der Meldeprint hat zur Aufgabe die von den einzelnen Panels übertragenen Informationen zu empfangen und diese auszuwerten. Er entscheidet, ob ein Panel fehlerhaft ist und zeigt dieses auf einem Display an. Der Meldeprint ist grundlegend aufgeteilt in die folgenden SChaltungsteile: Speisung, Mikrocontroller, Powerline Transceiver/Receiver, Bedienung und Ausgabe.
+Der Meldeprint hat zur Aufgabe die von den einzelnen Panels übertragenen Informationen zu empfangen und diese auszuwerten. Er entscheidet, ob ein Panel fehlerhaft ist und zeigt dieses auf einem Display an. Der Meldeprint ist grundlegend aufgeteilt in die folgenden Schaltungsteile: Speisung, Mikrocontroller, Powerline Transceiver sowie Bedienung und Ausgabe.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{konzept_melde.PNG}
+	\caption{Grobkonzept des Meldeprints}	
+\end{figure}
 
 \subsubsection{Speisung}
 Als Speisung wird ein 230V-AC/DC Netzgerät genommen. Dieses wandelt die Spannung in 24V DC um welche wiederum mit zwei weiteren DC/DC Wandlern in 12V für die Speisung des Mikrocontrollers und des Powerline Transceivers respektive 5V für die Logik Schaltung. Das 24V-AC/DC Netzteil wurde gewählt da diese Spannung im Eingangsspannungsbereich der meisten DC/DC-Wandler liegt und so eine erhöhte Flexibilität in der Wahl dieser erlaubt. Für die DC/DC-Wandler wurden 2 Traco Power Step-Down Converter gewählt weil diese keine externe Beschaltung benötigen und einen Wirkungsgrad grösser als 90 Prozent haben.
@@ -13,7 +19,8 @@ Der Mikrocontroller regelt das empfangen der Informationen der einzelnen Solarpa
 Der Mikrocontroller liest den Status des Inkrementalgebers ein, welcher für die Menüführung zuständig ist. Der Mikrocontroller kann mittels eines Reset Tasters in den Originalzustand zurückversetzt werden, welches alle momentane Messwerte löscht.
 
 \subsubsection{Receiver}
-Als Powerline Transceiver/Receiver wurde wie schon beim Sensor-Print der ST7540 genommen. Die Beschaltung entspricht auch derjenigen vom Sensor-Print, als Design Grundlage für die Filterschaltung wurde der Application Guide \cite[p. 48]{Applic_Guide_ST7540} von STMicroelectrinics verwendet. Der Powerline Transceiver kommuniziert so mit 123.5kHz. Für die Grundbeschaltung wurde das Datenblatt des ST7540 \cite[p. 40]{Datasheet_ST7540} als Referenz genommen.
+Als Powerline Transceive wurde wie schon beim Sensor-Print der ST7540 genommen. Die Beschaltung entspricht derjenigen vom Sensor-Print, als Design Grundlage für die Filterschaltung wurde der Application Guide \cite[p. 48]{Applic_Guide_ST7540} von STMicroelectrinics verwendet. Als Übertragungsfrequenz wurde 132.5kHz gewählt. Für die Grundbeschaltung wurde das Datenblatt des ST7540 \cite[p. 40]{Datasheet_ST7540} als Referenz genommen.
+Es wurde anfangs des Projektes gegen die Entwicklung einer eigenen Powerline-Communication entschieden aufgrund des grossen Zeitaufwandes sowohl für die Erarbeitung der Theorie für die Frequenzmodulation, als auch der Entwicklung selbst. Stattdessen wurde zugunsten eines Integrierten Bausteins entschieden. Der ST7540 wurde gewählt, da 8 Übertragungsfrequenzen bereits vorprogrammiert sind sowie auch 4 Baudraten. Für die Dimensionierung der Beschaltung waren das Datenblatt \cite{Datasheet_ST7540} sowie ein Application Guide \cite{Applic_Guide_ST7540} verfügbar, dies vereinfachte die Auswahl der Bauteile für die Filterschaltungen (siehe Kapitel \ref{sec::Theorie}).
 
 %\subsubsection{Layout}
 \subsubsection{Bedienung und Ausgabe}
