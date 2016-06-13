@@ -1,7 +1,42 @@
 \section{Validierung}
-In den folgenden Kapiteln werden die Validierungen der Spannungsmessung und die Konzepte für die Datenübertragung via Powerline, Fehlererkennung eines Moduls und der Kollisionserkennung.
+In den folgenden Kapiteln werden die Validierungen der Spannungsmessung und die Konzepte für die Datenübertragung via Powerline, Fehlererkennung eines Moduls und der Kollisionserkennung erklärt.
+\subsection{Datenübertragung auf Sensorprint}
+Die Übertragung der Daten vom Analog-Digital-Converter zum Mikrocontroller wird anhand des SPI Übertragungsprotokolls gewährleistet. In Abbildung \ref{SPI_MISO} und \ref{SPI_MOSI} sind die übertragenen Werte erkennbar. 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{sections/data/singalbilder1.jpg}
+\caption{MOSI: Mikrocontroller out ADC in}
+\label{SPI_MOSI}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{sections/data/singalbilder3.jpg}
+\caption{MISO: Rückgabewert von ADC}
+\label{SPI_MISO}
+\end{figure}
+
+Wie in den vorhergehenden Abbildungen ersichtlich, funktioniert die Kommunikation zwischen ADC und Mikrocontroller, denn der ADC gibt ein Bitmuster zurück, welches mit der in Abschnitt \ref{Spannungsmessung} beschriebenen Software verwendet werden kann. \\
+\newpage
+Die Kommunikation zwischen Mikrocontroller und Tranceiver funktioniert via UART. Die folgenden Abbildungen \ref{Trans_Ein} und \ref{Trans_Aus} die Übertragung.
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{sections/data/singalbilder8.jpg}
+\caption{Tranceiver Eingang}
+\label{Trans_Ein}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{sections/data/singalbilder4.jpg}
+\caption{Tranceiver Ausgang}
+\label{Trans_Aus}
+\end{figure}
+
+
 \subsection{Spannungsmessung}
-Als Indiz für eine defekte oder verdunkelte Solarzelle wird die Zellenspannung gemessen, daher ist bei dieser die Messgenauigkeit sehr wichtig und wurde vom Auftraggeber auf $\pm$0.1V festgelegt. Um dies zu überprüfen, wird die angelegte Spannung mit einem weiteren Messgerät aufgezeichnet und mit dem ermittelten Wert verglichen. Die berechnete Abweichung beträgt $\pm$??V, daher sollte die tatsächliche Messungenauigkeit zwischen $\pm$??V und $\pm$0.1V liegen. In diesem Kapitel werden die Ergebnisse der Genauigkeitsmessung aufgeführt.
+Als Indiz für eine defekte oder verdunkelte Solarzelle wird die Zellenspannung gemessen, daher ist bei dieser die Messgenauigkeit sehr wichtig und wurde vom Auftraggeber auf $\pm$0.1V festgelegt. Um dies zu überprüfen, wird die angelegte Spannung mit einem weiteren Messgerät aufgezeichnet und mit dem ermittelten Wert verglichen. \\
+Die Spannungsmessung soll softwaremässig, wie in Abschnitt \ref{Spannungsmessung} beschrieben, gelöst werden. Die Genauigkeit soll mit einem Spannungsgenerator als Quelle überprüft werden. 
 \subsection{Datenübertragung via Powerline}
 Das Ziel dieser Messung ist es, eine vorher definierte Anzahl Bits via Powerline zu übertragen. Dafür werden an einem spannungsführenden Kabel zwei Ferritkerne, mit verschiedenen Abständen dazwischen, angebracht und über eine Spule mit dem jeweiligen Transceiver verbunden. Das vom ersten Transceiver gesendete Bitmuster sollte beim zweiten Transceiver empfangen werden und das selbe Bitmuster wird wieder ausgeben.
 Die Abstände werden wie folgt verändert und das Empfangen von Bitmuster überprüft:

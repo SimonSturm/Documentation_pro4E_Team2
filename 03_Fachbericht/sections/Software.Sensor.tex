@@ -20,7 +20,7 @@ In der vorhergehenden Abbildung \ref{DiagrammSP} ist der Zusammenhang der einzel
 \paragraph{Inbetriebnahme}\\
 Die Identifikationsnummer kann über das Einlesen der Dip-Schalter gespeichert bzw. definiert werden. Dies muss vom Benutzer eindeutig und selbständig eingestellt werden. Es ist wichtig, dass diese Identifikationsnummer eindeutig und einzigartig im gesamten String ist. Der Plan ist, dass man via USB dem Panel zusätzlich ein Name gibt, um die Identifikation der einzelnen Panel zu vereinfachen. 
 
-\subsubsection{Spannungsmessung}
+\subsubsection{Spannungsmessung}\label{Spannungsmessung}
 %wieso-was-wie-unter welchen Bedingungen
 Die Kommunikation zwischen ADC und Mikrocontroller basiert auf dem Master-Salve-Prinzip. 
 Als Basis für die Spannungsmessung soll zukünftig ein Referenzwert dienen. Der empfangene Wert soll durch Berechnung der Abweichung zu diesem Referenzwert dem Spannnungswert zugeteilt werden. Der Plan ist, dass die empfangenen Werte vom ADC vom Mikrocontroller in einem bestimmten Zeitraum gespeichert gespeichert werden und der Mittelwert weiter an den Transceiver geleitet wird.
