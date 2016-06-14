@@ -22,7 +22,7 @@ Die Kommunikation über die DC-Leitung zwischen Sensorprint und Meldeprint ist u
 
 \subsubsection{Fehlererkennung}
 Die Fehlererkennung spielt eine zentrale Rolle im gesamten Überwachungssystem von Sensor- und Meldeprint. Eine übersichtliche und einfache Lösung ist die Fehlererkennung mithilfe des arithmetischen Mittels zusammen mit einer Identifikationsnummer.\\
-Die Variante will die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings mitteln. Damit kann die Standardabweichung berechnet werden.\todo{Haben wir eine Rechnung für Standardabweichung} Ist die Abweichung eines Spannungswerts mehr als 20 Prozent über der Standardabweichung, wird dieses Solarmodul vorgemerkt. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer stark vom Mittelwert ab, wird eine Fehlermeldung ausgegeben. Eine dem vorgemerkten Spannungswert hinterlegte Identifikationsnummer ermöglicht das exakte Ermitteln des fehlerhaften Moduls und es im String zu finden.
+Die Variante will die gemittelten Spannungswerte, die jede Sensorplatine liefert, nochmals über alle Module des Strings mitteln. Damit kann die Standardabweichung berechnet werden.\todo{Haben wir eine Rechnung für Standardabweichung} Ist die Abweichung eines Spannungswerts mehr als 20 Prozent von der Standardabweichung, wird dieses Solarmodul vorgemerkt. Weicht der Spannungswert des vorgemerkten Moduls nach der nächsten Stunde noch immer stark vom Mittelwert ab, wird eine Fehlermeldung ausgegeben. Eine dem vorgemerkten Spannungswert hinterlegte Identifikationsnummer ermöglicht das exakte Ermitteln des fehlerhaften Moduls und es im String zu finden.
 
 \begin{figure}[htbp] 
   \centering
@@ -31,14 +31,8 @@ Die Variante will die gemittelten Spannungswerte, die jede Sensorplatine liefert
   \label{fig:error-warning-scheme}
 \end{figure}
 
-\begin{figure}[htbp] 
-  \centering
-     \includegraphics[width=0.75\textwidth]{graphics/failurecalc-diagram}
-  \caption{Spannung-Zeit-Diagramm: Alle übermittelten Modulspannungen innerhalb einer Stunde}
-  \label{fig:failurecalc-diagram}
-\end{figure}
 
-Dieser Prozess wiederholt sich stündlich und ist in Abbildung \ref{fig:error-warning-scheme} sichtbar, weiter zeigt die Abbildung \ref{fig:failurecalc-diagram} die übermittelten Modulspannungen und solche, die eine zu grosse Toleranz haben und deshalb vorgemerkt werden.
+Dieser Prozess wiederholt sich stündlich und ist in Abbildung \ref{fig:error-warning-scheme} sichtbar.
 
 \subsubsection{Fehlermeldung}
 Wird ein defektes oder beschmutztes Modul detektiert wird eine entsprechende Fehlermeldung auf dem Display ausgegeben. Zusätzlich zu dieser Information sollen die Identifikationsnummer und der allfällige Name des Panels ausgegeben werden.\\
@@ -55,6 +49,6 @@ Das Menü und der Drehgeber bilden zusammen eine einfache Schnittstelle zwischen
 \end{figure}
 
 In der Hauptmenü-Zeile befinden sich die drei Einträge: ''Status der Anlage'', ''Einstellungen'' und ''Info über die Software'', die in Abbildung \ref{fig:structure-menu} zu sehen sind.\\
-Im ersten Untermenü kann der Benutzer zwischen drei Informationen wählen: abfragen der aktuellen gemittelten Spannung,  abfragen der erechneten Leistung der Anlage und nachschauen aller Nachrichten seit dem letzten Zurücksetzen des Meldeprints.\\
+Im ersten Untermenü kann der Benutzer zwischen zwei Informationen wählen: abfragen der aktuellen gemittelten Spannung und nachschauen aller Nachrichten seit dem letzten Zurücksetzen des Meldeprints.\\
 Im zweiten Untermenü kann der Benutzer Einstellungen vornehmen. Er hat die Möglichkeit dem Meldeprint einen Namen zu geben. Weiter muss die Menge der überwachten Module angegeben werden.\\
 Im dritten Untermenü werden Informationen zur aktuellen Software und dem Hersteller angezeigt.\\
