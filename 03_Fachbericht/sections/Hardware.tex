@@ -6,9 +6,9 @@ In den nachfolgenden Kapiteln werden alle Teilschaltungen beschrieben um einen m
 \subsection{Sensorprint}
 
 
-Jedes Solarpanel wird mit einem Sensorprint auf der Rückseite des Pannels bestückt. Der Sensorprint hat eine grösse von 6 x 6cm und kann somit optimal in die vorgesehene Halterung auf der Rückseite des Pannels eingebaut werden. Als Vorlage für die grösse der Halterung, wurde das Austellemodell im Labor in betracht gezogen.
+Jedes Solarpanel wird mit einem Sensorprint auf der Rückseite des Panels bestückt. Der Sensorprint hat eine grösse von 6 x 6cm und kann somit optimal in die vorgesehene Halterung auf der Rückseite des Pannels eingebaut werden. Als Vorlage für die grösse der Halterung, wurde das Austellemodell im Labor in betracht gezogen.
 
-Der Aufbau des Sensorprints besteht aus einem Mikrocontroller, einem Powerline-Transceiver, einem ADC-Converter und einer 12V-Speisung. Seine Aufgabe ist die Spannungswerte des Solarpannels einzulesen, diese zu verarbeiten und die Informationen über die Powerline an den Meldeprint zu übermitteln. Eine grobe Übersicht über den Aufbau und das Zusammenspielen der einzelnen Komponenten gibt die nachfolgende Abbildung.
+Der Aufbau des Sensorprints besteht aus einem Mikrocontroller, einem Powerline-Transceiver, einem ADC-Converter und einer 12V-Speisung. Seine Aufgabe ist die Spannungswerte des Solarpanels einzulesen, diese zu verarbeiten und die Informationen über die Powerline an den Meldeprint zu übermitteln. Eine grobe Übersicht über den Aufbau und das Zusammenspielen der einzelnen Komponenten gibt die nachfolgende Abbildung.
 
 \begin{figure}[h]
 \centering
@@ -19,7 +19,7 @@ Der Aufbau des Sensorprints besteht aus einem Mikrocontroller, einem Powerline-T
 \subsubsection{Speisung}
 Die Speisung des Sensorprints erfolgt über einen LM-2594-DC/DC-Regulator. Das Bauteil wurde gewählt, weil es einen Spannungsbereich gemäss unseren Anforderungen am Eingang gewährleistet.
 
-Eine variable Eingangsspannung von 12V-60V vom Solarpannel wird am Eingang detektiert. Der DC/DC-Regulator regelt diese Eingangsspannung mit Hilfe eines Schaltreglers auf eine feste 12V DC Spannung am Ausgang. Diese Spannung gewährleistet die Versorgung des Powerline Transceivers. Die restlichen Elemente werden mit 5V (VDC) gespiesen.
+Eine variable Eingangsspannung von 12V-60V vom Solarpanel wird am Eingang detektiert. Der DC/DC-Regulator regelt diese Eingangsspannung mit Hilfe eines Schaltreglers auf eine feste 12V DC Spannung am Ausgang. Diese Spannung gewährleistet die Versorgung des Powerline Transceivers. Die restlichen Elemente werden mit 5V (VDC) gespiesen.
 
 Die 5V DC Spannung wurde anders als geplannt realisiert. Auf dem Print war nur Platz für eine Speiseschaltung vorgesehen, darum musste die 5V-Spannung über den 5V-Ausgang des Powerline Transceivers realisiert werden. Da nur eine mittlere Leistung von max 100mW auf dem Sensorprint vorhanden ist, ist diese Beschaltung vertretbar.
 
@@ -37,7 +37,7 @@ Die ersichtlichen Bauteile wurden anhand der Datenbalttvorgaben des LM2594 ausge
 \
 \
 \subsubsection{Spannungsmessung}
-Die Spannungsmessung erfolgt über einen Analog-Digital-Converter (MCP 3202). Am Analog-Input (Ch0) des ADC's wird die Spannung des Solarpannels eingelesen. Da nur 0V-5V eingelesen werden können, wird die Spannung mit einem Spannungsteiler entsprechend skaliert. Der Analoge Wert wird vom ADC in einen binären 12-Bit-Wert (0V = 0000 0000 0000, 5V = 1111 1111 1111) umgewandelt und über den digitalen Output (Dout) zum Mikrocontroller übertragen. Ein 12 Bit ADC wurde gewählt, um die Genauigkeit der Spannungsmessung von 0.1V zwischen 12V und 60V zu gewährleisten.
+Die Spannungsmessung erfolgt über einen Analog-Digital-Converter (MCP 3202). Am Analog-Input (Ch0) des ADC's wird die Spannung des Solarpanels eingelesen. Da nur 0V-5V eingelesen werden können, wird die Spannung mit einem Spannungsteiler entsprechend skaliert. Der Analoge Wert wird vom ADC in einen binären 12-Bit-Wert (0V = 0000 0000 0000, 5V = 1111 1111 1111) umgewandelt und über den digitalen Output (Dout) zum Mikrocontroller übertragen. Ein 12 Bit ADC wurde gewählt, um die Genauigkeit der Spannungsmessung von 0.1V zwischen 12V und 60V zu gewährleisten.
 
 Um den Ablauf der Umwandlung besser nachvollziehen zu können, ist in der nachfolgenden Abbildung die innere Architektur des Analog-Digital-Converters ersichtlich.
 
@@ -74,7 +74,7 @@ Die Beschaltung der Schalter ist in der nachfolgenden Abbildung ersichtlich.
 \
 
 \subsubsection{Transceiver}
-Für die modelierung der Daten der Solarpannels, benutzen wir einen ST7540-Powerline-Transceiver. Dieser empfängt vom Mikrocontroller über den TxD Eingang ein Signal. Dieses Signal wird intern mit frequency shift keying (FSK) modeliert. Das modelierte Signal wird an den Ausgang übertragen und mittels induktiver Einkopplung auf die Powerline eingekoppelt. Die Einkopplung erfolgt mittels einem Draht, welcher um einen Feritkern gewickelt wurde. Dieses Zusammenspiel erzeugt eine Induktion und ermöglicht somit die Einkopplung auf die Pwoerline.
+Für die Modelierung der Daten der Solarpanels, benutzen wir einen ST7540-Powerline-Transceiver. Dieses Bauteil wurde gewählt, weil 8 Übertragungsfrequenzen bereits einprogrammiert sind, sowie 4 Baudraten. Der Transceiver empfängt vom Mikrocontroller über den TxD Eingang ein Signal. Dieses Signal wird intern mit frequency shift keying (FSK) modeliert. Als Übertragungsfrequenz wurde 132.5kHz gewählt. Das modelierte Signal wird an den Ausgang übertragen und mittels induktiver Einkopplung auf die Powerline eingekoppelt. Die Einkopplung erfolgt mittels einem Draht, welcher um einen Feritkern gewickelt wurde. Dieses Zusammenspiel erzeugt eine Induktion und ermöglicht somit die Einkopplung auf die Powerline.
 
 \clearpage
 
@@ -85,4 +85,4 @@ Für die modelierung der Daten der Solarpannels, benutzen wir einen ST7540-Power
 \end{figure}
 
 Auf der linken Seite des Transceivers, in Abbildung 6, sind die Ein-und-Ausgänge für die UART-Kommunikation vorhanden. Wie bereits im Abschnitt 3.1.1 Speisung erwähnt wurde, gewährleistet der Powerline Transceiver die 5V-Speisung mit Pin 26.
-Bei "V-" erfolgt die Einkopplung des FSK modulierten Signals auf die POwerline. Alle vorhandenen Bauteile dieser Beschaltung wurden anhand der Datenblattinformationen des ST7540 berechnet, dimensioniert und ausgewählt.
+Bei ''V-'' erfolgt die Einkopplung des FSK modulierten Signals auf die Powerline. Alle vorhandenen Bauteile dieser Beschaltung wurden anhand der Datenblattinformationen des ST7540 berechnet, dimensioniert und ausgewählt.
