@@ -2,21 +2,13 @@
 % Encoding: Cp1252
 
 
-@Electronic{Siemens_Rel,
-  Title                    = {{Miniature Relay PI V23026}},
-  Language                 = {Englisch},
-  Note                     = {{Zugriff am 13.06.2016}},
-  Organization             = {Siemens},
-  Url                      = {http://www.techno-star.biz/relays/v23026.pdf},
-
-  Owner                    = {Simon Sturm},
-  Timestamp                = {2016.06.13}
-}
-
 @Electronic{Datasheet_adc,
-  Title                    = {Datasheet_adc_12bit},
-  Url                      = {http://pdf1.alldatasheet.com/datasheet-pdf/view/74935/MICROCHIP/MCP3202.html},
-  Year                     = {1999-2011}
+  Title                    = {{MCP3202 Datasheet}},
+  Language                 = {{Englisch}},
+  Note                     = {{Zugriff am 14.06.2016}},
+  Organization             = {{Microchip}},
+  Url                      = {http://www.farnell.com/datasheets/1669376.pdf},
+  Year                     = {{2011}}
 }
 
 @Electronic{Applic_Guide_ST7540,
@@ -56,6 +48,19 @@
 
   Owner                    = {Simon Sturm},
   Timestamp                = {2016.06.06}
+}
+
+@Electronic{Siemens_Rel,
+  Title                    = {{Miniature Relay PI V23026}},
+  Language                 = {{Englisch}},
+  Month                    = {{Juni}},
+  Note                     = {{Zugriff am 13.06.2016}},
+  Organization             = {{Siemens}},
+  Url                      = {http://www.techno-star.biz/relays/v23026.pdf},
+  Year                     = {1996},
+
+  Owner                    = {Simon Sturm},
+  Timestamp                = {2016.06.13}
 }
 
 @comment{jabref-meta: databaseType:biblatex;}
