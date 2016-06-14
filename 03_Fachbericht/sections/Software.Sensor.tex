@@ -1,4 +1,3 @@
-
 \section{Software}
 Die Software gliedert sich in einen Teil für den Sensorprint auf dem Modul und einen Teil für den Meldeprint beim Gleichrichter. Der Teil für den Sensorprint muss unabhängig und wartungsfrei ablaufen können, wohingegen der Teil des Meldeprints in Interaktion mit dem Benutzer steht. Der Meldeprint bildet den wichtigsten Teil des Bindeglieds zwischen Benutzer und Hardware. Damit er die einzelnen Module identifizieren kann wird bei der Installation dem Sensorprints eine Identifikationsnummer gegeben. Zudem muss der Benutzer im Interface des Meldeprints die Anzahl Module angeben.
 Die Gemessenen Spannungswerte der Module werden via Powerline an den Meldeprint gesendet. Es sollen keine extra Datenkabel verwendet werden. Diese Daten müssen in der Meldestation auf dem Meldeprint verarbeitet werden. Eine allfällige Abweichung des Spannungswertes bei einem oder mehreren Modulen sollen erkannt und identifiziert werden. Worin genau diese Abweichung besteht, wird später erläutert. Nach der Identifikation muss ein solcher Fehler gemeldet werden. Die Kommunikation zwischen Hardware und Software basiert auf SPI. Das Endprodukt setzt sich aus Melde- und Sensorprint zusammen. In dieser Unterteilung werden in den nächsten Kapiteln alle Softwarekomponenten beschrieben.
@@ -31,7 +30,7 @@ Die Kommunikation zwischen dem Mikrocontroller und dem Tranceiver funktioniert �
 Der Mittelwert der Spannungsmessung soll an den Transceiver weitergegeben werden. Der Plan ist, dass neben dem Spannungswert die mit dem Schaltern eingestellte Identifikationsnummer und eine Checksumme übergeben wird. Die Prüfsumme soll mit dem zyklische Redundanzprüfung (Cyclic redundancy check = CRC)  erstellt werden. Die Prüfsumme ist sehr wichtig, da die Kommunikation über die Powerline unidirektional sein soll und  mit Hilfe einer Prüfsumme Fehler, welche durch Kollisionen oder äussere Einflüsse entstehen, detektiert werden können.
 
 \subsubsection{Kollisionsprävention}
-
+Die Kollisionsprävention ist ein wesentlicher Bestandteil der Übertragung. Kollisionen können durch die Sendezeiten beeinflusst werden. Der Plan ist, dass die Sendezeit zwischen verschiedenen Sensorplatinen durch einen festen Zeitbestandteil und einen einzigartigen zeitlichen Bruchteil zusammengesetzt wird.
 
 
 
