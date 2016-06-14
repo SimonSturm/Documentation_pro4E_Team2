@@ -8,7 +8,7 @@ In den nachfolgenden Kapiteln werden alle Teilschaltungen beschrieben um einen m
 
 Jedes Solarpanel wird mit einem Sensorprint auf der Rückseite des Panels bestückt. Der Sensorprint hat eine grösse von 6 x 6cm und kann somit optimal in die vorgesehene Halterung auf der Rückseite des Pannels eingebaut werden. Als Vorlage für die grösse der Halterung, wurde das Austellemodell im Labor in betracht gezogen.
 
-Der Aufbau des Sensorprints besteht aus einem Mikrocontroller, einem Powerline-Transceiver, einem ADC-Converter und einer 12V-Speisung. Seine Aufgabe ist die Spannungswerte des Solarpanels einzulesen, diese zu verarbeiten und die Informationen über die Powerline an den Meldeprint zu übermitteln. Eine grobe Übersicht über den Aufbau und das Zusammenspielen der einzelnen Komponenten gibt die nachfolgende Abbildung.
+Der Aufbau des Sensorprints besteht aus einem Mikrocontroller, einem Powerline-Transceiver, einem ADC-Converter und einer 12V-Speisung. Seine Aufgabe ist die Spannungswerte des Solarpanels einzulesen, diese zu verarbeiten und die Informationen über die Powerline an den Meldeprint zu übermitteln. Eine grobe Übersicht über den Aufbau und das Zusammenspiel der einzelnen Komponenten gibt die nachfolgende Abbildung.
 
 \begin{figure}[h]
 \centering
@@ -32,12 +32,12 @@ In der nachfolgenden Abbildung ist die Beschaltung der 12V Speisung (VCC) ersich
 \caption{Beschaltung der 12V-Speisung}
 \end{figure}
 
-Die ersichtlichen Bauteile wurden anhand der Datenbalttvorgaben des LM2594 ausgewählt.
+Die ersichtlichen Bauteile wurden anhand der Datenbalttvorgaben des LM2594 \cite{DCDC_Regulator_LM2594} ausgewählt.
 
 \
 \
 \subsubsection{Spannungsmessung}
-Die Spannungsmessung erfolgt über einen Analog-Digital-Converter (MCP 3202). Am Analog-Input (Ch0) des ADC's wird die Spannung des Solarpanels eingelesen. Da nur 0V-5V eingelesen werden können, wird die Spannung mit einem Spannungsteiler entsprechend skaliert. Der Analoge Wert wird vom ADC in einen binären 12-Bit-Wert (0V = 0000 0000 0000, 5V = 1111 1111 1111) umgewandelt und über den digitalen Output (Dout) zum Mikrocontroller übertragen. Ein 12 Bit ADC wurde gewählt, um die Genauigkeit der Spannungsmessung von 0.1V zwischen 12V und 60V zu gewährleisten.
+Die Spannungsmessung erfolgt über einen Analog-Digital-Converter (MCP 3202). Am Analog-Input (Ch0) des ADC's wird die Spannung des Solarpanels eingelesen. Da nur 0V-5V eingelesen werden können, wird die Spannung mit einem Spannungsteiler entsprechend skaliert. Der Analoge Wert wird vom ADC in einen binären 12-Bit-Wert (0V = 0000 0000 0000, 5V = 1111 1111 1111) umgewandelt und über den digitalen Output (Dout) zum Mikrocontroller übertragen. Ein 12 Bit ADC wurde gewählt, um die Genauigkeit der Spannungsmessung von 0.1V zwischen 12V und 60V zu gewährleisten. MIt dem 12 Bit ADC können wir eine Messgenaugkeit von 1.25mV gewährleisten.
 
 Um den Ablauf der Umwandlung besser nachvollziehen zu können, ist in der nachfolgenden Abbildung die innere Architektur des Analog-Digital-Converters ersichtlich.
 
@@ -54,13 +54,13 @@ Um den Ablauf der Umwandlung besser nachvollziehen zu können, ist in der nachfo
 \subsubsection{Mikrocontroller}
 Als zentrale Steuereinheit des Sensorprints wurde ein Arduino-Nano-Board mit einem Atmega-328-Chip ausgewählt. Dieses Board wurde gewählt, weil in vorgängigen Projekten bereits damit gearbeitet wurde. Zudem können unsere Anforderungen mit der vorhandenen Leistung des Mikrocontrollers problemlos realisiert werden. Als Verbesserung könnte man den Atmega 328 und seine Grundbeschaltung direkt auf den Print bestücken. Somit könnte man mehr Platz sparen und den Print noch komprimierter herstellen.
 
-Die Aufgabe des Mikrocontrollers auf dem Sensorprint beruht im Allgemeinen darauf, die Verbindung zwischen dem ADC und dem Powerline Transceiver herzustellen. Die Verbindung zwischen Mikrocontroller und ADC funktioniert mit SPI-Kommunikation. Diejenige zum Powerline Transceiver wird über UART-Kommunikation hergestellt. Detailiertere Informationen zur Kommunikation der einzelnen Elemente untereinander sind im Abschnitt 4.1 unter Software zufinden.
+Die Aufgabe des Mikrocontrollers auf dem Sensorprint beruht im Allgemeinen darauf, die Verbindung zwischen dem ADC und dem Powerline Transceiver herzustellen. Die Verbindung zwischen Mikrocontroller und ADC funktioniert mit SPI-Kommunikation. Diejenige zum Powerline Transceiver wird über UART-Kommunikation hergestellt. Detailiertere Informationen zur Kommunikation der einzelnen Elemente untereinander sind im Abschnitt \ref{Software_sensorprint} unter Software zufinden.
 
 
 \clearpage
 
 \subsubsection{Adressierung}
-Um das Pannel identifizeren zu können, wurde Hardware basierend eine binäre Adressierung vorgesehen. Diese erfolgt über einen binären 8-Bit-Wert, welcher mit Dip - Switch Schaltern eingestellt werden kann. Dieser wird parallel an 8 digitalen-Eingängen am Mikrocontroller eingelesen. Wenn ein Schalter gedrückt wird, gelangt 5V (=1) an den Eingang des MIkrocontrollers. Wenn der Schalter offen ist, gelangt 0V (=0) mittels 10kOhm pull-down-Widerständen an den Eingang. Mit 8 Schaltern können somit 256 Pannels adressiert werden. 
+Um das Pannel identifizeren zu können, wurde Hardware basierend eine binäre Adressierung vorgesehen. Diese erfolgt über einen binären 8-Bit-Wert, welcher mit Dip-Switch Schaltern eingestellt werden kann. Dieser wird parallel an 8 digitalen-Eingängen am Mikrocontroller eingelesen. Wenn ein Schalter gedrückt wird, gelangt 5V (=1) an den Eingang des MIkrocontrollers. Wenn der Schalter offen ist, gelangt 0V (=0) mittels 10kOhm pull-down-Widerständen an den Eingang. Mit 8 Schaltern können somit 256 Pannels adressiert werden. 
 
 Die Beschaltung der Schalter ist in der nachfolgenden Abbildung ersichtlich.
 
