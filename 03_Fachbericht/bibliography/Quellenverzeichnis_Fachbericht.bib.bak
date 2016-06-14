@@ -1,6 +1,23 @@
 % This file was created with JabRef 2.10.
-% Encoding: UTF8
+% Encoding: Cp1252
 
+
+@Electronic{Siemens_Rel,
+  Title                    = {{Miniature Relay PI V23026}},
+  Language                 = {Englisch},
+  Note                     = {{Zugriff am 13.06.2016}},
+  Organization             = {Siemens},
+  Url                      = {http://www.techno-star.biz/relays/v23026.pdf},
+
+  Owner                    = {Simon Sturm},
+  Timestamp                = {2016.06.13}
+}
+
+@Electronic{Datasheet_adc,
+  Title                    = {Datasheet_adc_12bit},
+  Url                      = {http://pdf1.alldatasheet.com/datasheet-pdf/view/74935/MICROCHIP/MCP3202.html},
+  Year                     = {1999-2011}
+}
 
 @Electronic{Applic_Guide_ST7540,
   Title                    = {{AN2451 Application Note}},
@@ -40,4 +57,6 @@
   Owner                    = {Simon Sturm},
   Timestamp                = {2016.06.06}
 }
+
+@comment{jabref-meta: databaseType:biblatex;}
 
