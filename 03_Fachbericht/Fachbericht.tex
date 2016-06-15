@@ -2,8 +2,11 @@
 \input{./preamble/packages}
 
 \begin{document}
-\includepdf[pages=-]{./abstract/Abstract.pdf}
 \input{./title/Title_TOC}
+\includepdf[pages=-]{./abstract/Abstract.pdf}
+\tableofcontents 
+\clearpage
+
 \include{./sections/Einleitung}
 \include{./sections/Theorie}
 \include{./sections/Hardware_Sensorprint}

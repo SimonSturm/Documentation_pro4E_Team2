@@ -2,6 +2,18 @@
 % Encoding: Cp1252
 
 
+@Electronic{encodercode,
+  Title                    = {{Drehgeber}},
+  Language                 = {Deutsch},
+  Note                     = {{Zugriff am 15.06.2016}},
+  Organization             = {{www.mikrocontroller.net}},
+  Url                      = {https://www.mikrocontroller.net/articles/Drehgeber#Handbediente_Drehgeber},
+  Year                     = {2015},
+
+  Owner                    = {Claudius Jörg},
+  Timestamp                = {15.06.2016}
+}
+
 @Electronic{Datasheet_adc,
   Title                    = {{MCP3202 Datasheet}},
   Language                 = {{Englisch}},
