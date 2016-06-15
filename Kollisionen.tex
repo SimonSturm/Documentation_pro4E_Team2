@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article} %Legt grundlegende Formatierungen wie Schriftarten, Ort Seitenzahlen etc. fest.
+%
+
+\begin{document}
+\section{Sendekollisionen}
+Da eine unidirektionale Kommunikation zwischen Sensorplatine und Meldegerät gewählt wurde, muss man mit Kollisionen rechnen. Zwei Nachrichten kollidieren, wenn sie zum selben Zeitpunkt geschickt werden. Im vorliegenden Dokument wird erläutert, wie die Wahrscheinlichkeit für eine Kollision berechnet wurde. Die Wahrscheinlichkeit, dass mehr als eine Sensorplatine auf einmal sendet, kann grundsätzlich auf zwei Arten berechnet werden. Zuerst wurde die Poissonverteilung zu Hilfe genommen. Kontrolliert wurden die Berechnungen mit der Binomialverteilung.\\
+\subsection{Poissonverteilung}
+
+%$\frac{(\lambda\cdot t)^{k}\cdot \e^{-\lambda \cdot t}}{k!}$
+\begin{equation}
+\frac{\left(\lambda\cdot t\right)^k\cdot e^{-\lambda\cdot t}}{k!}
+\end{equation}
+Mit der Annahme, dass eine Nachricht 0.1 Sekunden braucht bis sie ankommt, wurde hier weiter analysiert. Gesucht ist die Wahrscheinlichkeit, dass mehr als eine Nachricht während dem Zeitinterval 0.1 Sekunden gesendet werden. Das Zeitinterval $t$ in der Formel (1) ist also 0.1 Sekunden.\\
+$k$ stellt die mögliche Gesamtzahl der Nachrichten dar. Wenn man also an der Wahrscheinlichkeit für eine Kollision zweier Nachrichten interessiert ist setzt man für $k$ zwei ein. In unserem Fall summieren wir die Wahrscheinlichkeiten für 2 bis 250 Nachrichten gleichzeitig auf.\\
+Für die Senderate $\lambda$ werden verschidene Werte ausprobiert. Bei 250 Modulen, die 60 Mal pro Stunde senden, beträgt die Senderate $\frac{250 \cdot 60}{3600Sekunden}$. 
+\\\\Jede Sensorplatine sendet \textbf{•60 Mal pro Stunde}: \\ \textbf{6.6 Prozent•} Wahrscheinlichkeit für eine Kollision.\\\\
+Bei 250 Modulen, die 6 Mal pro Stunde senden, beträgt die Senderate $\frac{250 \cdot 6}{3600Sekunden}$.
+\\\\Jede Sensorplatine sendet \textbf{•6 Mal pro Stunde}: \\ \textbf{•0.08 Prozent} Wahrscheinlichkeit für eine Kollision.\\
+\subsection{Binomialverteilung}
+
+\begin{equation}
+	{n\choose k}\cdot q^{k} \cdot(1-q)^{n-k}
+\end{equation}
+Mit Hilfe der Binomialverteilung erhält man das selbe Resultat. $q$ stellt die Wahrscheinlichkeit dar mit der eine Nachricht einen bestimmten Zeitpunkt erwischt. Ein Zeitpunkt ist 0.1 Sekunden lang. Davon hat eine Stunde 36 000. Somit beträgt $q$=$\frac{1}{36 000}$.
+\\Auch bei der Binomialverteilung ist $k$ die Anzahl gleichzeitig sendender Nachrichten. $n$ ist die Anzahl der versendeten Nachrichten. Diese wurden wiederum ausprobiert. Einmal für $60Nachrichten\cdot250Module$ und einmal für  $6Nachrichten\cdot250Module$.
+Für die Kollisionswahrscheinlichkeit wird die Binomialverteilung für die $k$s von 2 bis 250 aufsummiert. Die Ergebnisse entsprechen denjenigen aus der Berechnung der Poissonverteilung.
+
+%\begin{equation}
+	%a=left(\begin{array}
+	%c\\d
+	%\end{array}
+%\end{equation}
+
+\subsection{Folgerung}
+Durch die Reduktion der Senderate konnte die Wahrscheinlichkeit für eine Kollision drastisch verkleinert werden. Die 0.08 Prozent entsprechen unseren Vorstellungen voll und ganz. Man kann davon ausgehen, dass bei 6 Nachrichten pro Stunde mindestens eine korrekt beim Meldegerät ankommen wird. Zudem wird weniger Leistung verbraucht, wenn die Senderate reduziert wird, was natürlich erwünscht ist.
+\end{document}
